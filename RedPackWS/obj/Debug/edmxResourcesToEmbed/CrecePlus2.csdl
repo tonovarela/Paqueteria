@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CrecePlus2Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="CrecePlus2Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="GuiaPaqueteria" EntityType="CrecePlus2Model.GuiaPaqueteria" />
+    <EntitySet Name="Orden" EntityType="CrecePlus2Model.Orden" />
+    <EntitySet Name="PaqueteEnvio" EntityType="CrecePlus2Model.PaqueteEnvio" />
+    <EntitySet Name="Paqueteria" EntityType="CrecePlus2Model.Paqueteria" />
+    <AssociationSet Name="FK_GuiaPaqueteria_Paqueteria" Association="CrecePlus2Model.FK_GuiaPaqueteria_Paqueteria">
+      <End Role="Paqueteria" EntitySet="Paqueteria" />
+      <End Role="GuiaPaqueteria" EntitySet="GuiaPaqueteria" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PaqueteEnvio_GuiaPaqueteria" Association="CrecePlus2Model.FK_PaqueteEnvio_GuiaPaqueteria">
+      <End Role="GuiaPaqueteria" EntitySet="GuiaPaqueteria" />
+      <End Role="PaqueteEnvio" EntitySet="PaqueteEnvio" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PaqueteEnvio_Orden" Association="CrecePlus2Model.FK_PaqueteEnvio_Orden">
+      <End Role="Orden" EntitySet="Orden" />
+      <End Role="PaqueteEnvio" EntitySet="PaqueteEnvio" />
+    </AssociationSet>
+    <EntitySet Name="Cliente" EntityType="CrecePlus2Model.Cliente" />
+    <AssociationSet Name="FK_Orden_Cliente1" Association="CrecePlus2Model.FK_Orden_Cliente1">
+      <End Role="Cliente" EntitySet="Cliente" />
+      <End Role="Orden" EntitySet="Orden" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="GuiaPaqueteria">
+    <Key>
+      <PropertyRef Name="numero_guia" />
+    </Key>
+    <Property Name="id_paqueteria" Type="Byte" />
+    <Property Name="id_tipoServicio" Type="Byte" />
+    <Property Name="numero_guia" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Paqueteria" Relationship="CrecePlus2Model.FK_GuiaPaqueteria_Paqueteria" FromRole="GuiaPaqueteria" ToRole="Paqueteria" />
+    <NavigationProperty Name="PaqueteEnvio" Relationship="CrecePlus2Model.FK_PaqueteEnvio_GuiaPaqueteria" FromRole="GuiaPaqueteria" ToRole="PaqueteEnvio" />
+  </EntityType>
+  <EntityType Name="Orden">
+    <Key>
+      <PropertyRef Name="numero_orden" />
+    </Key>
+    <Property Name="numero_orden" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="id_cliente" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="calle" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="codigo_postal" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ciudad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="estado" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="tipo_envio" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_registro" Type="DateTime" Precision="3" />
+    <Property Name="telefono" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="fecha_entrega" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="PaqueteEnvio" Relationship="CrecePlus2Model.FK_PaqueteEnvio_Orden" FromRole="Orden" ToRole="PaqueteEnvio" />
+    <NavigationProperty Name="Cliente" Relationship="CrecePlus2Model.FK_Orden_Cliente1" FromRole="Orden" ToRole="Cliente" />
+  </EntityType>
+  <EntityType Name="PaqueteEnvio">
+    <Key>
+      <PropertyRef Name="numero_orden" />
+    </Key>
+    <Property Name="detalle_impresion" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="numero_orden" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="numero_guia" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GuiaPaqueteria" Relationship="CrecePlus2Model.FK_PaqueteEnvio_GuiaPaqueteria" FromRole="PaqueteEnvio" ToRole="GuiaPaqueteria" />
+    <NavigationProperty Name="Orden" Relationship="CrecePlus2Model.FK_PaqueteEnvio_Orden" FromRole="PaqueteEnvio" ToRole="Orden" />
+  </EntityType>
+  <EntityType Name="Paqueteria">
+    <Key>
+      <PropertyRef Name="id_paqueteria" />
+    </Key>
+    <Property Name="id_paqueteria" Type="Byte" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="GuiaPaqueteria" Relationship="CrecePlus2Model.FK_GuiaPaqueteria_Paqueteria" FromRole="Paqueteria" ToRole="GuiaPaqueteria" />
+  </EntityType>
+  <Association Name="FK_GuiaPaqueteria_Paqueteria">
+    <End Type="CrecePlus2Model.Paqueteria" Role="Paqueteria" Multiplicity="0..1" />
+    <End Type="CrecePlus2Model.GuiaPaqueteria" Role="GuiaPaqueteria" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Paqueteria">
+        <PropertyRef Name="id_paqueteria" />
+      </Principal>
+      <Dependent Role="GuiaPaqueteria">
+        <PropertyRef Name="id_paqueteria" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PaqueteEnvio_GuiaPaqueteria">
+    <End Type="CrecePlus2Model.GuiaPaqueteria" Role="GuiaPaqueteria" Multiplicity="0..1" />
+    <End Type="CrecePlus2Model.PaqueteEnvio" Role="PaqueteEnvio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GuiaPaqueteria">
+        <PropertyRef Name="numero_guia" />
+      </Principal>
+      <Dependent Role="PaqueteEnvio">
+        <PropertyRef Name="numero_guia" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PaqueteEnvio_Orden">
+    <End Type="CrecePlus2Model.Orden" Role="Orden" Multiplicity="1" />
+    <End Type="CrecePlus2Model.PaqueteEnvio" Role="PaqueteEnvio" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Orden">
+        <PropertyRef Name="numero_orden" />
+      </Principal>
+      <Dependent Role="PaqueteEnvio">
+        <PropertyRef Name="numero_orden" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="id_cliente" />
+    </Key>
+    <Property Name="id_cliente" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="apellidos" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Orden" Relationship="CrecePlus2Model.FK_Orden_Cliente1" FromRole="Cliente" ToRole="Orden" />
+  </EntityType>
+  <Association Name="FK_Orden_Cliente1">
+    <End Type="CrecePlus2Model.Cliente" Role="Cliente" Multiplicity="1" />
+    <End Type="CrecePlus2Model.Orden" Role="Orden" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="id_cliente" />
+      </Principal>
+      <Dependent Role="Orden">
+        <PropertyRef Name="id_cliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

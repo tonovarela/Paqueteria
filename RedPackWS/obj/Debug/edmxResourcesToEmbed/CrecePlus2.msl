@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CrecePlus2ModelStoreContainer" CdmEntityContainer="CrecePlus2Entities">
+    <EntitySetMapping Name="GuiaPaqueteria">
+      <EntityTypeMapping TypeName="CrecePlus2Model.GuiaPaqueteria">
+        <MappingFragment StoreEntitySet="GuiaPaqueteria">
+          <ScalarProperty Name="numero_guia" ColumnName="numero_guia" />
+          <ScalarProperty Name="id_tipoServicio" ColumnName="id_tipoServicio" />
+          <ScalarProperty Name="id_paqueteria" ColumnName="id_paqueteria" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orden">
+      <EntityTypeMapping TypeName="CrecePlus2Model.Orden">
+        <MappingFragment StoreEntitySet="Orden">
+          <ScalarProperty Name="fecha_entrega" ColumnName="fecha_entrega" />
+          <ScalarProperty Name="telefono" ColumnName="telefono" />
+          <ScalarProperty Name="fecha_registro" ColumnName="fecha_registro" />
+          <ScalarProperty Name="tipo_envio" ColumnName="tipo_envio" />
+          <ScalarProperty Name="estado" ColumnName="estado" />
+          <ScalarProperty Name="ciudad" ColumnName="ciudad" />
+          <ScalarProperty Name="codigo_postal" ColumnName="codigo_postal" />
+          <ScalarProperty Name="calle" ColumnName="calle" />
+          <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
+          <ScalarProperty Name="numero_orden" ColumnName="numero_orden" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PaqueteEnvio">
+      <EntityTypeMapping TypeName="CrecePlus2Model.PaqueteEnvio">
+        <MappingFragment StoreEntitySet="PaqueteEnvio">
+          <ScalarProperty Name="numero_guia" ColumnName="numero_guia" />
+          <ScalarProperty Name="numero_orden" ColumnName="numero_orden" />
+          <ScalarProperty Name="detalle_impresion" ColumnName="detalle_impresion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Paqueteria">
+      <EntityTypeMapping TypeName="CrecePlus2Model.Paqueteria">
+        <MappingFragment StoreEntitySet="Paqueteria">
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="id_paqueteria" ColumnName="id_paqueteria" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cliente">
+      <EntityTypeMapping TypeName="CrecePlus2Model.Cliente">
+        <MappingFragment StoreEntitySet="Cliente">
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="apellidos" ColumnName="apellidos" />
+          <ScalarProperty Name="nombre" ColumnName="nombre" />
+          <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

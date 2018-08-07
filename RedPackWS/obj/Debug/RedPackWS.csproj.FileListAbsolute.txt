@@ -1,0 +1,14 @@
+C:\Users\tonovarela\source\repos\RedPackWS\RedPackWS\obj\Debug\RedPackWS.csprojResolveAssemblyReference.cache
+C:\Users\tonovarela\source\repos\RedPackWS\RedPackWS\obj\Debug\RedPackWS.csproj.CoreCompileInputs.cache
+C:\Users\tonovarela\source\repos\RedPackWS\RedPackWS\bin\Debug\RedPackWS.exe.config
+C:\Users\tonovarela\source\repos\RedPackWS\RedPackWS\bin\Debug\RedPackWS.exe
+C:\Users\tonovarela\source\repos\RedPackWS\RedPackWS\bin\Debug\RedPackWS.pdb
+C:\Users\tonovarela\source\repos\RedPackWS\RedPackWS\obj\Debug\RedPackWS.exe
+C:\Users\tonovarela\source\repos\RedPackWS\RedPackWS\obj\Debug\RedPackWS.pdb
+C:\Users\tonovarela\source\repos\RedPackWS\RedPackWS\bin\Debug\EntityFramework.dll
+C:\Users\tonovarela\source\repos\RedPackWS\RedPackWS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tonovarela\source\repos\RedPackWS\RedPackWS\bin\Debug\EntityFramework.xml
+C:\Users\tonovarela\source\repos\RedPackWS\RedPackWS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\tonovarela\source\repos\RedPackWS\RedPackWS\obj\Debug\RedPackWS.csproj.CopyComplete
+C:\Users\tonovarela\source\repos\RedPackWS\RedPackWS\bin\Debug\itextsharp.dll
+C:\Users\tonovarela\source\repos\RedPackWS\RedPackWS\bin\Debug\itextsharp.xml

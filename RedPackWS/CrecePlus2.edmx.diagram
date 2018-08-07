@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="14f522a973e94b27b89e5d87adb7d1f9" Name="Diagram1" >
+        <EntityTypeShape EntityType="CrecePlus2Model.GuiaPaqueteria" Width="1.5" PointX="3" PointY="0.875" />
+        <EntityTypeShape EntityType="CrecePlus2Model.Orden" Width="1.5" PointX="3" PointY="5.75" />
+        <EntityTypeShape EntityType="CrecePlus2Model.PaqueteEnvio" Width="1.5" PointX="5.25" PointY="0.875" />
+        <EntityTypeShape EntityType="CrecePlus2Model.Paqueteria" Width="1.5" PointX="0.75" PointY="1.125" />
+        <AssociationConnector Association="CrecePlus2Model.FK_GuiaPaqueteria_Paqueteria" />
+        <AssociationConnector Association="CrecePlus2Model.FK_PaqueteEnvio_GuiaPaqueteria" />
+        <AssociationConnector Association="CrecePlus2Model.FK_PaqueteEnvio_Orden" />
+        <EntityTypeShape EntityType="CrecePlus2Model.Cliente" Width="1.5" PointX="0.75" PointY="6.375" />
+        <AssociationConnector Association="CrecePlus2Model.FK_Orden_Cliente1" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
