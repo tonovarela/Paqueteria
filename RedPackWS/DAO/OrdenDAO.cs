@@ -17,6 +17,13 @@ namespace RedPackWS.DAO
                         .Where(x=>x.numero_orden==numero_orden)
                         .FirstOrDefault();
         }
+
+        
+
+        public bool TieneGuiaAsignada(string numero_orden)
+        {
+            return this._context.PaqueteEnvio.Any(x=>x.numero_orden==numero_orden);
+        }
     }
 
 }

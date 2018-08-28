@@ -9,14 +9,42 @@ namespace RedPackWS.DAO
     public class GuiaDAO:DAO
     {
 
-        public string ObtenerGuiaDisponibleExpress()
+        public string ObtenerGuiaDisponible(int tipoServicio)
         {
-            return this._context.Database.SqlQuery<string>(@"select 
-                                                            a.numero_guia
-                                                            from GuiaPaqueteria a
-                                                            left join PaqueteEnvio b on (a.numero_guia = b.numero_guia)
-                                                            where b.numero_guia is null and a.id_tipoServicio=2 ").First();
+            var guia= this._context.GuiaPaqueteria
+                .Where(x => x.asignada == false && x.id_tipoServicio==tipoServicio)
+                .FirstOrDefault();           
+            return guia.numero_guia;
+            
 
         }
+
+        
+
+
+
+        public void MarcarGuiaAsignada(string numero_guia)
+        {
+            try
+            {
+                var guia = this._context.GuiaPaqueteria.Where(x => x.numero_guia == numero_guia).FirstOrDefault();
+                guia.asignada = true;
+                this._context.SaveChanges();
+            }
+             catch(Exception e)
+            {
+               
+            }
+
+        }
+
+
+        public void AgregarFolioRecoleccion(string guia,string folioRecoleccion)
+        {
+            PaqueteEnvio p = this._context.PaqueteEnvio.Where(x => x.numero_guia == guia).FirstOrDefault();
+            p.folio_recoleccion = folioRecoleccion;
+            this._context.SaveChanges();
+        }
+
     }
 }

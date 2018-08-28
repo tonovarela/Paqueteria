@@ -23,6 +23,7 @@ namespace RedPackWS
         public Nullable<byte> id_paqueteria { get; set; }
         public Nullable<byte> id_tipoServicio { get; set; }
         public string numero_guia { get; set; }
+        public bool asignada { get; set; }
     
         public virtual Paqueteria Paqueteria { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedPackWS", "RedPackWS\RedPackWS.csproj", "{173807CB-F4B7-47DC-AAEB-D5EBA9686B5B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedPackW", "..\RedPackW\RedPackW\RedPackW.csproj", "{454BF0EA-07CB-4077-A766-9579C109ACB7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{173807CB-F4B7-47DC-AAEB-D5EBA9686B5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{173807CB-F4B7-47DC-AAEB-D5EBA9686B5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{173807CB-F4B7-47DC-AAEB-D5EBA9686B5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{454BF0EA-07CB-4077-A766-9579C109ACB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{454BF0EA-07CB-4077-A766-9579C109ACB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{454BF0EA-07CB-4077-A766-9579C109ACB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{454BF0EA-07CB-4077-A766-9579C109ACB7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

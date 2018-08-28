@@ -11,9 +11,13 @@ namespace RedPackWS.DAO
 
         public void AgregarPaquete(PaqueteEnvio paquete)
         {
+            
             this._context.PaqueteEnvio.Add(paquete);
             this._context.SaveChanges();
         }
+
+
+
         
     }
 }

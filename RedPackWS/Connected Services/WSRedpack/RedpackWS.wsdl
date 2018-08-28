@@ -22,6 +22,180 @@
           </xs:sequence>
         </xs:complexType>
       </xs:element>
+      <xs:element name="cierraGtx">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="PIN" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="guias" nillable="true" type="ax22:Guia" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="cierraGtxResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="ax22:Guia" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="obtenerPruebaDeEntrega">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="PIN" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="guias" nillable="true" type="ax22:Guia" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="obtenerPruebaDeEntregaResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="ax22:Guia" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="solicitaGtx">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="PIN" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="guias" nillable="true" type="ax22:Guia" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="solicitaGtxResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="ax22:Guia" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="circuitoAgregaEmbarqueRecepcion">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="PIN" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="guias" nillable="true" type="ax22:Guia" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="circuitoAgregaEmbarqueRecepcionResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="ax22:Guia" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="obtieneCatalogoTipoEnvioCorreo">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="PIN" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="obtieneCatalogoTipoEnvioCorreoResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="ax22:Guia" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="EnviaCorreoNotificacion">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="PIN" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="guias" nillable="true" type="ax22:Guia" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="EnviaCorreoNotificacionResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="ax22:Guia" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="matrizDistribucion">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="PIN" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="guias" nillable="true" type="ax22:Guia" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="matrizDistribucionResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="ax22:Guia" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="obtieneCatalogoPoblacionPorEstado">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="PIN" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="guias" nillable="true" type="ax22:Guia" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="obtieneCatalogoPoblacionPorEstadoResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="ax22:Guia" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="obtieneCatalogoIataInternacional">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="PIN" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="obtieneCatalogoIataInternacionalResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="ax22:Guia" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaReciboNomina">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="PIN" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="guias" nillable="true" type="ax22:Guia" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="consultaReciboNominaResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="ax22:Guia" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="documentacionGuiaPalex">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="PIN" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="guias" nillable="true" type="ax22:Guia" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="documentacionGuiaPalexResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="ax22:Guia" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
       <xs:element name="historialCargoCombustible">
         <xs:complexType>
           <xs:sequence>
@@ -31,6 +205,118 @@
         </xs:complexType>
       </xs:element>
       <xs:element name="historialCargoCombustibleResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="ax22:Guia" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="envioSinDatos">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="PIN" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="guias" nillable="true" type="ax22:Guia" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="envioSinDatosResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="ax22:Guia" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="buscaFactura">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="PIN" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="guias" nillable="true" type="ax22:Guia" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="buscaFacturaResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="ax22:Guia" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="documentacionInterF">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="PIN" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="guias" nillable="true" type="ax22:Guia" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="documentacionInterFResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="ax22:Guia" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="buscaGuiaInterRpk">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="PIN" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="guias" nillable="true" type="ax22:Guia" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="buscaGuiaInterRpkResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="ax22:Guia" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="buscaEtiquetaInter">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="PIN" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="guias" nillable="true" type="ax22:Guia" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="buscaEtiquetaInterResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="ax22:Guia" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="facturasAbiertas">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="PIN" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="guias" nillable="true" type="ax22:Guia" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="facturasAbiertasResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="ax22:Guia" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="documentacionInterU">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="PIN" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="guias" nillable="true" type="ax22:Guia" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="documentacionInterUResponse">
         <xs:complexType>
           <xs:sequence>
             <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="ax22:Guia" />
@@ -1269,292 +1555,6 @@
           </xs:sequence>
         </xs:complexType>
       </xs:element>
-      <xs:element name="buscaFactura">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" name="PIN" nillable="true" type="xs:string" />
-            <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="guias" nillable="true" type="ax22:Guia" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="buscaFacturaResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="ax22:Guia" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="documentacionInterF">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" name="PIN" nillable="true" type="xs:string" />
-            <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="guias" nillable="true" type="ax22:Guia" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="documentacionInterFResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="ax22:Guia" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="buscaGuiaInterRpk">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" name="PIN" nillable="true" type="xs:string" />
-            <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="guias" nillable="true" type="ax22:Guia" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="buscaGuiaInterRpkResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="ax22:Guia" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="buscaEtiquetaInter">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" name="PIN" nillable="true" type="xs:string" />
-            <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="guias" nillable="true" type="ax22:Guia" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="buscaEtiquetaInterResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="ax22:Guia" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="facturasAbiertas">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" name="PIN" nillable="true" type="xs:string" />
-            <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="guias" nillable="true" type="ax22:Guia" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="facturasAbiertasResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="ax22:Guia" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="documentacionInterU">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" name="PIN" nillable="true" type="xs:string" />
-            <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="guias" nillable="true" type="ax22:Guia" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="documentacionInterUResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="ax22:Guia" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="envioSinDatos">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" name="PIN" nillable="true" type="xs:string" />
-            <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="guias" nillable="true" type="ax22:Guia" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="envioSinDatosResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="ax22:Guia" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="cierraGtx">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" name="PIN" nillable="true" type="xs:string" />
-            <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="guias" nillable="true" type="ax22:Guia" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="cierraGtxResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="ax22:Guia" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="obtenerPruebaDeEntrega">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" name="PIN" nillable="true" type="xs:string" />
-            <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="guias" nillable="true" type="ax22:Guia" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="obtenerPruebaDeEntregaResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="ax22:Guia" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="solicitaGtx">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" name="PIN" nillable="true" type="xs:string" />
-            <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="guias" nillable="true" type="ax22:Guia" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="solicitaGtxResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="ax22:Guia" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="circuitoAgregaEmbarqueRecepcion">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" name="PIN" nillable="true" type="xs:string" />
-            <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="guias" nillable="true" type="ax22:Guia" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="circuitoAgregaEmbarqueRecepcionResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="ax22:Guia" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="obtieneCatalogoTipoEnvioCorreo">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" name="PIN" nillable="true" type="xs:string" />
-            <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="obtieneCatalogoTipoEnvioCorreoResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="ax22:Guia" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="EnviaCorreoNotificacion">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" name="PIN" nillable="true" type="xs:string" />
-            <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="guias" nillable="true" type="ax22:Guia" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="EnviaCorreoNotificacionResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="ax22:Guia" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="matrizDistribucion">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" name="PIN" nillable="true" type="xs:string" />
-            <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="guias" nillable="true" type="ax22:Guia" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="matrizDistribucionResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="ax22:Guia" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="obtieneCatalogoPoblacionPorEstado">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" name="PIN" nillable="true" type="xs:string" />
-            <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="guias" nillable="true" type="ax22:Guia" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="obtieneCatalogoPoblacionPorEstadoResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="ax22:Guia" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="obtieneCatalogoIataInternacional">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" name="PIN" nillable="true" type="xs:string" />
-            <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="obtieneCatalogoIataInternacionalResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="ax22:Guia" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="consultaReciboNomina">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" name="PIN" nillable="true" type="xs:string" />
-            <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="guias" nillable="true" type="ax22:Guia" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="consultaReciboNominaResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="ax22:Guia" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="documentacionGuiaPalex">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" name="PIN" nillable="true" type="xs:string" />
-            <xs:element minOccurs="0" name="idUsuario" type="xs:int" />
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="guias" nillable="true" type="ax22:Guia" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
-      <xs:element name="documentacionGuiaPalexResponse">
-        <xs:complexType>
-          <xs:sequence>
-            <xs:element minOccurs="0" maxOccurs="unbounded" name="return" nillable="true" type="ax22:Guia" />
-          </xs:sequence>
-        </xs:complexType>
-      </xs:element>
     </xs:schema>
     <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://vo.redpack.com/xsd">
       <xs:complexType name="Guia">
@@ -1720,17 +1720,17 @@
   <wsdl:message name="rastreoInternacionalResponse">
     <wsdl:part name="parameters" element="ns:rastreoInternacionalResponse" />
   </wsdl:message>
-  <wsdl:message name="cargaDistribucionRequest">
-    <wsdl:part name="parameters" element="ns:cargaDistribucion" />
-  </wsdl:message>
-  <wsdl:message name="cargaDistribucionResponse">
-    <wsdl:part name="parameters" element="ns:cargaDistribucionResponse" />
-  </wsdl:message>
   <wsdl:message name="obtieneCatalogoClavesDEXRequest">
     <wsdl:part name="parameters" element="ns:obtieneCatalogoClavesDEX" />
   </wsdl:message>
   <wsdl:message name="obtieneCatalogoClavesDEXResponse">
     <wsdl:part name="parameters" element="ns:obtieneCatalogoClavesDEXResponse" />
+  </wsdl:message>
+  <wsdl:message name="cargaDistribucionRequest">
+    <wsdl:part name="parameters" element="ns:cargaDistribucion" />
+  </wsdl:message>
+  <wsdl:message name="cargaDistribucionResponse">
+    <wsdl:part name="parameters" element="ns:cargaDistribucionResponse" />
   </wsdl:message>
   <wsdl:message name="conductorCircuitoRequest">
     <wsdl:part name="parameters" element="ns:conductorCircuito" />
@@ -1828,29 +1828,29 @@
   <wsdl:message name="solicitaGtxResponse">
     <wsdl:part name="parameters" element="ns:solicitaGtxResponse" />
   </wsdl:message>
-  <wsdl:message name="centrosDistribucionRequest">
-    <wsdl:part name="parameters" element="ns:centrosDistribucion" />
-  </wsdl:message>
-  <wsdl:message name="centrosDistribucionResponse">
-    <wsdl:part name="parameters" element="ns:centrosDistribucionResponse" />
-  </wsdl:message>
   <wsdl:message name="buscaUnidadNombreRequest">
     <wsdl:part name="parameters" element="ns:buscaUnidadNombre" />
   </wsdl:message>
   <wsdl:message name="buscaUnidadNombreResponse">
     <wsdl:part name="parameters" element="ns:buscaUnidadNombreResponse" />
   </wsdl:message>
-  <wsdl:message name="guardaCircuitoRequest">
-    <wsdl:part name="parameters" element="ns:guardaCircuito" />
+  <wsdl:message name="centrosDistribucionRequest">
+    <wsdl:part name="parameters" element="ns:centrosDistribucion" />
   </wsdl:message>
-  <wsdl:message name="guardaCircuitoResponse">
-    <wsdl:part name="parameters" element="ns:guardaCircuitoResponse" />
+  <wsdl:message name="centrosDistribucionResponse">
+    <wsdl:part name="parameters" element="ns:centrosDistribucionResponse" />
   </wsdl:message>
   <wsdl:message name="subirGuiasGtxRequest">
     <wsdl:part name="parameters" element="ns:subirGuiasGtx" />
   </wsdl:message>
   <wsdl:message name="subirGuiasGtxResponse">
     <wsdl:part name="parameters" element="ns:subirGuiasGtxResponse" />
+  </wsdl:message>
+  <wsdl:message name="guardaCircuitoRequest">
+    <wsdl:part name="parameters" element="ns:guardaCircuito" />
+  </wsdl:message>
+  <wsdl:message name="guardaCircuitoResponse">
+    <wsdl:part name="parameters" element="ns:guardaCircuitoResponse" />
   </wsdl:message>
   <wsdl:message name="solicitaCompulsaRequest">
     <wsdl:part name="parameters" element="ns:solicitaCompulsa" />
@@ -1906,17 +1906,23 @@
   <wsdl:message name="catalogoDireccionesGuiaWebResponse">
     <wsdl:part name="parameters" element="ns:catalogoDireccionesGuiaWebResponse" />
   </wsdl:message>
+  <wsdl:message name="obtieneCatalogoIataInternacionalRequest">
+    <wsdl:part name="parameters" element="ns:obtieneCatalogoIataInternacional" />
+  </wsdl:message>
+  <wsdl:message name="obtieneCatalogoIataInternacionalResponse">
+    <wsdl:part name="parameters" element="ns:obtieneCatalogoIataInternacionalResponse" />
+  </wsdl:message>
   <wsdl:message name="buscaUnidadRequest">
     <wsdl:part name="parameters" element="ns:buscaUnidad" />
   </wsdl:message>
   <wsdl:message name="buscaUnidadResponse">
     <wsdl:part name="parameters" element="ns:buscaUnidadResponse" />
   </wsdl:message>
-  <wsdl:message name="obtieneCatalogoIataInternacionalRequest">
-    <wsdl:part name="parameters" element="ns:obtieneCatalogoIataInternacional" />
+  <wsdl:message name="cierraGtxRequest">
+    <wsdl:part name="parameters" element="ns:cierraGtx" />
   </wsdl:message>
-  <wsdl:message name="obtieneCatalogoIataInternacionalResponse">
-    <wsdl:part name="parameters" element="ns:obtieneCatalogoIataInternacionalResponse" />
+  <wsdl:message name="cierraGtxResponse">
+    <wsdl:part name="parameters" element="ns:cierraGtxResponse" />
   </wsdl:message>
   <wsdl:message name="pruebaEntregaRequest">
     <wsdl:part name="parameters" element="ns:pruebaEntrega" />
@@ -1930,29 +1936,23 @@
   <wsdl:message name="buscaSucursalCPResponse">
     <wsdl:part name="parameters" element="ns:buscaSucursalCPResponse" />
   </wsdl:message>
-  <wsdl:message name="cierraGtxRequest">
-    <wsdl:part name="parameters" element="ns:cierraGtx" />
-  </wsdl:message>
-  <wsdl:message name="cierraGtxResponse">
-    <wsdl:part name="parameters" element="ns:cierraGtxResponse" />
-  </wsdl:message>
   <wsdl:message name="generaGuiaElectronicaRequest">
     <wsdl:part name="parameters" element="ns:generaGuiaElectronica" />
   </wsdl:message>
   <wsdl:message name="generaGuiaElectronicaResponse">
     <wsdl:part name="parameters" element="ns:generaGuiaElectronicaResponse" />
   </wsdl:message>
-  <wsdl:message name="buscaConductorRequest">
-    <wsdl:part name="parameters" element="ns:buscaConductor" />
-  </wsdl:message>
-  <wsdl:message name="buscaConductorResponse">
-    <wsdl:part name="parameters" element="ns:buscaConductorResponse" />
-  </wsdl:message>
   <wsdl:message name="buscaEtiquetaInterRequest">
     <wsdl:part name="parameters" element="ns:buscaEtiquetaInter" />
   </wsdl:message>
   <wsdl:message name="buscaEtiquetaInterResponse">
     <wsdl:part name="parameters" element="ns:buscaEtiquetaInterResponse" />
+  </wsdl:message>
+  <wsdl:message name="buscaConductorRequest">
+    <wsdl:part name="parameters" element="ns:buscaConductor" />
+  </wsdl:message>
+  <wsdl:message name="buscaConductorResponse">
+    <wsdl:part name="parameters" element="ns:buscaConductorResponse" />
   </wsdl:message>
   <wsdl:message name="consultaReciboNominaRequest">
     <wsdl:part name="parameters" element="ns:consultaReciboNomina" />
@@ -2026,17 +2026,17 @@
   <wsdl:message name="obtieneCatalogoSucursalesResponse">
     <wsdl:part name="parameters" element="ns:obtieneCatalogoSucursalesResponse" />
   </wsdl:message>
-  <wsdl:message name="obtieneCatalogoDestinosLTLRequest">
-    <wsdl:part name="parameters" element="ns:obtieneCatalogoDestinosLTL" />
-  </wsdl:message>
-  <wsdl:message name="obtieneCatalogoDestinosLTLResponse">
-    <wsdl:part name="parameters" element="ns:obtieneCatalogoDestinosLTLResponse" />
-  </wsdl:message>
   <wsdl:message name="documentacionGuiaPalexRequest">
     <wsdl:part name="parameters" element="ns:documentacionGuiaPalex" />
   </wsdl:message>
   <wsdl:message name="documentacionGuiaPalexResponse">
     <wsdl:part name="parameters" element="ns:documentacionGuiaPalexResponse" />
+  </wsdl:message>
+  <wsdl:message name="obtieneCatalogoDestinosLTLRequest">
+    <wsdl:part name="parameters" element="ns:obtieneCatalogoDestinosLTL" />
+  </wsdl:message>
+  <wsdl:message name="obtieneCatalogoDestinosLTLResponse">
+    <wsdl:part name="parameters" element="ns:obtieneCatalogoDestinosLTLResponse" />
   </wsdl:message>
   <wsdl:message name="actualizacionSituacionesRequest">
     <wsdl:part name="parameters" element="ns:actualizacionSituaciones" />
@@ -2098,17 +2098,17 @@
   <wsdl:message name="obtieneCatalogoTipoGtxResponse">
     <wsdl:part name="parameters" element="ns:obtieneCatalogoTipoGtxResponse" />
   </wsdl:message>
-  <wsdl:message name="solicitudRecoleccionRequest">
-    <wsdl:part name="parameters" element="ns:solicitudRecoleccion" />
-  </wsdl:message>
-  <wsdl:message name="solicitudRecoleccionResponse">
-    <wsdl:part name="parameters" element="ns:solicitudRecoleccionResponse" />
-  </wsdl:message>
   <wsdl:message name="matrizDistribucionRequest">
     <wsdl:part name="parameters" element="ns:matrizDistribucion" />
   </wsdl:message>
   <wsdl:message name="matrizDistribucionResponse">
     <wsdl:part name="parameters" element="ns:matrizDistribucionResponse" />
+  </wsdl:message>
+  <wsdl:message name="solicitudRecoleccionRequest">
+    <wsdl:part name="parameters" element="ns:solicitudRecoleccion" />
+  </wsdl:message>
+  <wsdl:message name="solicitudRecoleccionResponse">
+    <wsdl:part name="parameters" element="ns:solicitudRecoleccionResponse" />
   </wsdl:message>
   <wsdl:message name="calculaCostoSeguroRequest">
     <wsdl:part name="parameters" element="ns:calculaCostoSeguro" />
@@ -2152,17 +2152,17 @@
   <wsdl:message name="direccionesRecoleccionResponse">
     <wsdl:part name="parameters" element="ns:direccionesRecoleccionResponse" />
   </wsdl:message>
-  <wsdl:message name="buscaRutaDistribucionRequest">
-    <wsdl:part name="parameters" element="ns:buscaRutaDistribucion" />
-  </wsdl:message>
-  <wsdl:message name="buscaRutaDistribucionResponse">
-    <wsdl:part name="parameters" element="ns:buscaRutaDistribucionResponse" />
-  </wsdl:message>
   <wsdl:message name="EnviaCorreoNotificacionRequest">
     <wsdl:part name="parameters" element="ns:EnviaCorreoNotificacion" />
   </wsdl:message>
   <wsdl:message name="EnviaCorreoNotificacionResponse">
     <wsdl:part name="parameters" element="ns:EnviaCorreoNotificacionResponse" />
+  </wsdl:message>
+  <wsdl:message name="buscaRutaDistribucionRequest">
+    <wsdl:part name="parameters" element="ns:buscaRutaDistribucion" />
+  </wsdl:message>
+  <wsdl:message name="buscaRutaDistribucionResponse">
+    <wsdl:part name="parameters" element="ns:buscaRutaDistribucionResponse" />
   </wsdl:message>
   <wsdl:message name="buscaFacturaRequest">
     <wsdl:part name="parameters" element="ns:buscaFactura" />
@@ -2230,17 +2230,17 @@
   <wsdl:message name="cotizacionLTLResponse">
     <wsdl:part name="parameters" element="ns:cotizacionLTLResponse" />
   </wsdl:message>
-  <wsdl:message name="pesoCircuitoRequest">
-    <wsdl:part name="parameters" element="ns:pesoCircuito" />
-  </wsdl:message>
-  <wsdl:message name="pesoCircuitoResponse">
-    <wsdl:part name="parameters" element="ns:pesoCircuitoResponse" />
-  </wsdl:message>
   <wsdl:message name="envioSinDatosRequest">
     <wsdl:part name="parameters" element="ns:envioSinDatos" />
   </wsdl:message>
   <wsdl:message name="envioSinDatosResponse">
     <wsdl:part name="parameters" element="ns:envioSinDatosResponse" />
+  </wsdl:message>
+  <wsdl:message name="pesoCircuitoRequest">
+    <wsdl:part name="parameters" element="ns:pesoCircuito" />
+  </wsdl:message>
+  <wsdl:message name="pesoCircuitoResponse">
+    <wsdl:part name="parameters" element="ns:pesoCircuitoResponse" />
   </wsdl:message>
   <wsdl:message name="documentacionRequest">
     <wsdl:part name="parameters" element="ns:documentacion" />
@@ -2291,13 +2291,13 @@
       <wsdl:input wsaw:Action="urn:rastreoInternacional" message="ns:rastreoInternacionalRequest" />
       <wsdl:output wsaw:Action="urn:rastreoInternacionalResponse" message="ns:rastreoInternacionalResponse" />
     </wsdl:operation>
-    <wsdl:operation name="cargaDistribucion">
-      <wsdl:input wsaw:Action="urn:cargaDistribucion" message="ns:cargaDistribucionRequest" />
-      <wsdl:output wsaw:Action="urn:cargaDistribucionResponse" message="ns:cargaDistribucionResponse" />
-    </wsdl:operation>
     <wsdl:operation name="obtieneCatalogoClavesDEX">
       <wsdl:input wsaw:Action="urn:obtieneCatalogoClavesDEX" message="ns:obtieneCatalogoClavesDEXRequest" />
       <wsdl:output wsaw:Action="urn:obtieneCatalogoClavesDEXResponse" message="ns:obtieneCatalogoClavesDEXResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="cargaDistribucion">
+      <wsdl:input wsaw:Action="urn:cargaDistribucion" message="ns:cargaDistribucionRequest" />
+      <wsdl:output wsaw:Action="urn:cargaDistribucionResponse" message="ns:cargaDistribucionResponse" />
     </wsdl:operation>
     <wsdl:operation name="conductorCircuito">
       <wsdl:input wsaw:Action="urn:conductorCircuito" message="ns:conductorCircuitoRequest" />
@@ -2363,21 +2363,21 @@
       <wsdl:input wsaw:Action="urn:solicitaGtx" message="ns:solicitaGtxRequest" />
       <wsdl:output wsaw:Action="urn:solicitaGtxResponse" message="ns:solicitaGtxResponse" />
     </wsdl:operation>
-    <wsdl:operation name="centrosDistribucion">
-      <wsdl:input wsaw:Action="urn:centrosDistribucion" message="ns:centrosDistribucionRequest" />
-      <wsdl:output wsaw:Action="urn:centrosDistribucionResponse" message="ns:centrosDistribucionResponse" />
-    </wsdl:operation>
     <wsdl:operation name="buscaUnidadNombre">
       <wsdl:input wsaw:Action="urn:buscaUnidadNombre" message="ns:buscaUnidadNombreRequest" />
       <wsdl:output wsaw:Action="urn:buscaUnidadNombreResponse" message="ns:buscaUnidadNombreResponse" />
     </wsdl:operation>
-    <wsdl:operation name="guardaCircuito">
-      <wsdl:input wsaw:Action="urn:guardaCircuito" message="ns:guardaCircuitoRequest" />
-      <wsdl:output wsaw:Action="urn:guardaCircuitoResponse" message="ns:guardaCircuitoResponse" />
+    <wsdl:operation name="centrosDistribucion">
+      <wsdl:input wsaw:Action="urn:centrosDistribucion" message="ns:centrosDistribucionRequest" />
+      <wsdl:output wsaw:Action="urn:centrosDistribucionResponse" message="ns:centrosDistribucionResponse" />
     </wsdl:operation>
     <wsdl:operation name="subirGuiasGtx">
       <wsdl:input wsaw:Action="urn:subirGuiasGtx" message="ns:subirGuiasGtxRequest" />
       <wsdl:output wsaw:Action="urn:subirGuiasGtxResponse" message="ns:subirGuiasGtxResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="guardaCircuito">
+      <wsdl:input wsaw:Action="urn:guardaCircuito" message="ns:guardaCircuitoRequest" />
+      <wsdl:output wsaw:Action="urn:guardaCircuitoResponse" message="ns:guardaCircuitoResponse" />
     </wsdl:operation>
     <wsdl:operation name="solicitaCompulsa">
       <wsdl:input wsaw:Action="urn:solicitaCompulsa" message="ns:solicitaCompulsaRequest" />
@@ -2415,13 +2415,17 @@
       <wsdl:input wsaw:Action="urn:catalogoDireccionesGuiaWeb" message="ns:catalogoDireccionesGuiaWebRequest" />
       <wsdl:output wsaw:Action="urn:catalogoDireccionesGuiaWebResponse" message="ns:catalogoDireccionesGuiaWebResponse" />
     </wsdl:operation>
+    <wsdl:operation name="obtieneCatalogoIataInternacional">
+      <wsdl:input wsaw:Action="urn:obtieneCatalogoIataInternacional" message="ns:obtieneCatalogoIataInternacionalRequest" />
+      <wsdl:output wsaw:Action="urn:obtieneCatalogoIataInternacionalResponse" message="ns:obtieneCatalogoIataInternacionalResponse" />
+    </wsdl:operation>
     <wsdl:operation name="buscaUnidad">
       <wsdl:input wsaw:Action="urn:buscaUnidad" message="ns:buscaUnidadRequest" />
       <wsdl:output wsaw:Action="urn:buscaUnidadResponse" message="ns:buscaUnidadResponse" />
     </wsdl:operation>
-    <wsdl:operation name="obtieneCatalogoIataInternacional">
-      <wsdl:input wsaw:Action="urn:obtieneCatalogoIataInternacional" message="ns:obtieneCatalogoIataInternacionalRequest" />
-      <wsdl:output wsaw:Action="urn:obtieneCatalogoIataInternacionalResponse" message="ns:obtieneCatalogoIataInternacionalResponse" />
+    <wsdl:operation name="cierraGtx">
+      <wsdl:input wsaw:Action="urn:cierraGtx" message="ns:cierraGtxRequest" />
+      <wsdl:output wsaw:Action="urn:cierraGtxResponse" message="ns:cierraGtxResponse" />
     </wsdl:operation>
     <wsdl:operation name="pruebaEntrega">
       <wsdl:input wsaw:Action="urn:pruebaEntrega" message="ns:pruebaEntregaRequest" />
@@ -2431,21 +2435,17 @@
       <wsdl:input wsaw:Action="urn:buscaSucursalCP" message="ns:buscaSucursalCPRequest" />
       <wsdl:output wsaw:Action="urn:buscaSucursalCPResponse" message="ns:buscaSucursalCPResponse" />
     </wsdl:operation>
-    <wsdl:operation name="cierraGtx">
-      <wsdl:input wsaw:Action="urn:cierraGtx" message="ns:cierraGtxRequest" />
-      <wsdl:output wsaw:Action="urn:cierraGtxResponse" message="ns:cierraGtxResponse" />
-    </wsdl:operation>
     <wsdl:operation name="generaGuiaElectronica">
       <wsdl:input wsaw:Action="urn:generaGuiaElectronica" message="ns:generaGuiaElectronicaRequest" />
       <wsdl:output wsaw:Action="urn:generaGuiaElectronicaResponse" message="ns:generaGuiaElectronicaResponse" />
     </wsdl:operation>
-    <wsdl:operation name="buscaConductor">
-      <wsdl:input wsaw:Action="urn:buscaConductor" message="ns:buscaConductorRequest" />
-      <wsdl:output wsaw:Action="urn:buscaConductorResponse" message="ns:buscaConductorResponse" />
-    </wsdl:operation>
     <wsdl:operation name="buscaEtiquetaInter">
       <wsdl:input wsaw:Action="urn:buscaEtiquetaInter" message="ns:buscaEtiquetaInterRequest" />
       <wsdl:output wsaw:Action="urn:buscaEtiquetaInterResponse" message="ns:buscaEtiquetaInterResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="buscaConductor">
+      <wsdl:input wsaw:Action="urn:buscaConductor" message="ns:buscaConductorRequest" />
+      <wsdl:output wsaw:Action="urn:buscaConductorResponse" message="ns:buscaConductorResponse" />
     </wsdl:operation>
     <wsdl:operation name="consultaReciboNomina">
       <wsdl:input wsaw:Action="urn:consultaReciboNomina" message="ns:consultaReciboNominaRequest" />
@@ -2495,13 +2495,13 @@
       <wsdl:input wsaw:Action="urn:obtieneCatalogoSucursales" message="ns:obtieneCatalogoSucursalesRequest" />
       <wsdl:output wsaw:Action="urn:obtieneCatalogoSucursalesResponse" message="ns:obtieneCatalogoSucursalesResponse" />
     </wsdl:operation>
-    <wsdl:operation name="obtieneCatalogoDestinosLTL">
-      <wsdl:input wsaw:Action="urn:obtieneCatalogoDestinosLTL" message="ns:obtieneCatalogoDestinosLTLRequest" />
-      <wsdl:output wsaw:Action="urn:obtieneCatalogoDestinosLTLResponse" message="ns:obtieneCatalogoDestinosLTLResponse" />
-    </wsdl:operation>
     <wsdl:operation name="documentacionGuiaPalex">
       <wsdl:input wsaw:Action="urn:documentacionGuiaPalex" message="ns:documentacionGuiaPalexRequest" />
       <wsdl:output wsaw:Action="urn:documentacionGuiaPalexResponse" message="ns:documentacionGuiaPalexResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="obtieneCatalogoDestinosLTL">
+      <wsdl:input wsaw:Action="urn:obtieneCatalogoDestinosLTL" message="ns:obtieneCatalogoDestinosLTLRequest" />
+      <wsdl:output wsaw:Action="urn:obtieneCatalogoDestinosLTLResponse" message="ns:obtieneCatalogoDestinosLTLResponse" />
     </wsdl:operation>
     <wsdl:operation name="actualizacionSituaciones">
       <wsdl:input wsaw:Action="urn:actualizacionSituaciones" message="ns:actualizacionSituacionesRequest" />
@@ -2543,13 +2543,13 @@
       <wsdl:input wsaw:Action="urn:obtieneCatalogoTipoGtx" message="ns:obtieneCatalogoTipoGtxRequest" />
       <wsdl:output wsaw:Action="urn:obtieneCatalogoTipoGtxResponse" message="ns:obtieneCatalogoTipoGtxResponse" />
     </wsdl:operation>
-    <wsdl:operation name="solicitudRecoleccion">
-      <wsdl:input wsaw:Action="urn:solicitudRecoleccion" message="ns:solicitudRecoleccionRequest" />
-      <wsdl:output wsaw:Action="urn:solicitudRecoleccionResponse" message="ns:solicitudRecoleccionResponse" />
-    </wsdl:operation>
     <wsdl:operation name="matrizDistribucion">
       <wsdl:input wsaw:Action="urn:matrizDistribucion" message="ns:matrizDistribucionRequest" />
       <wsdl:output wsaw:Action="urn:matrizDistribucionResponse" message="ns:matrizDistribucionResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="solicitudRecoleccion">
+      <wsdl:input wsaw:Action="urn:solicitudRecoleccion" message="ns:solicitudRecoleccionRequest" />
+      <wsdl:output wsaw:Action="urn:solicitudRecoleccionResponse" message="ns:solicitudRecoleccionResponse" />
     </wsdl:operation>
     <wsdl:operation name="calculaCostoSeguro">
       <wsdl:input wsaw:Action="urn:calculaCostoSeguro" message="ns:calculaCostoSeguroRequest" />
@@ -2579,13 +2579,13 @@
       <wsdl:input wsaw:Action="urn:direccionesRecoleccion" message="ns:direccionesRecoleccionRequest" />
       <wsdl:output wsaw:Action="urn:direccionesRecoleccionResponse" message="ns:direccionesRecoleccionResponse" />
     </wsdl:operation>
-    <wsdl:operation name="buscaRutaDistribucion">
-      <wsdl:input wsaw:Action="urn:buscaRutaDistribucion" message="ns:buscaRutaDistribucionRequest" />
-      <wsdl:output wsaw:Action="urn:buscaRutaDistribucionResponse" message="ns:buscaRutaDistribucionResponse" />
-    </wsdl:operation>
     <wsdl:operation name="EnviaCorreoNotificacion">
       <wsdl:input wsaw:Action="urn:EnviaCorreoNotificacion" message="ns:EnviaCorreoNotificacionRequest" />
       <wsdl:output wsaw:Action="urn:EnviaCorreoNotificacionResponse" message="ns:EnviaCorreoNotificacionResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="buscaRutaDistribucion">
+      <wsdl:input wsaw:Action="urn:buscaRutaDistribucion" message="ns:buscaRutaDistribucionRequest" />
+      <wsdl:output wsaw:Action="urn:buscaRutaDistribucionResponse" message="ns:buscaRutaDistribucionResponse" />
     </wsdl:operation>
     <wsdl:operation name="buscaFactura">
       <wsdl:input wsaw:Action="urn:buscaFactura" message="ns:buscaFacturaRequest" />
@@ -2631,13 +2631,13 @@
       <wsdl:input wsaw:Action="urn:cotizacionLTL" message="ns:cotizacionLTLRequest" />
       <wsdl:output wsaw:Action="urn:cotizacionLTLResponse" message="ns:cotizacionLTLResponse" />
     </wsdl:operation>
-    <wsdl:operation name="pesoCircuito">
-      <wsdl:input wsaw:Action="urn:pesoCircuito" message="ns:pesoCircuitoRequest" />
-      <wsdl:output wsaw:Action="urn:pesoCircuitoResponse" message="ns:pesoCircuitoResponse" />
-    </wsdl:operation>
     <wsdl:operation name="envioSinDatos">
       <wsdl:input wsaw:Action="urn:envioSinDatos" message="ns:envioSinDatosRequest" />
       <wsdl:output wsaw:Action="urn:envioSinDatosResponse" message="ns:envioSinDatosResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="pesoCircuito">
+      <wsdl:input wsaw:Action="urn:pesoCircuito" message="ns:pesoCircuitoRequest" />
+      <wsdl:output wsaw:Action="urn:pesoCircuitoResponse" message="ns:pesoCircuitoResponse" />
     </wsdl:operation>
     <wsdl:operation name="documentacion">
       <wsdl:input wsaw:Action="urn:documentacion" message="ns:documentacionRequest" />
@@ -2731,8 +2731,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="obtieneCatalogoClavesDEX">
-      <soap:operation soapAction="urn:obtieneCatalogoClavesDEX" style="document" />
+    <wsdl:operation name="cargaDistribucion">
+      <soap:operation soapAction="urn:cargaDistribucion" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -2740,8 +2740,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="cargaDistribucion">
-      <soap:operation soapAction="urn:cargaDistribucion" style="document" />
+    <wsdl:operation name="obtieneCatalogoClavesDEX">
+      <soap:operation soapAction="urn:obtieneCatalogoClavesDEX" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -2893,15 +2893,6 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="buscaUnidadNombre">
-      <soap:operation soapAction="urn:buscaUnidadNombre" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
     <wsdl:operation name="centrosDistribucion">
       <soap:operation soapAction="urn:centrosDistribucion" style="document" />
       <wsdl:input>
@@ -2911,8 +2902,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="guardaCircuito">
-      <soap:operation soapAction="urn:guardaCircuito" style="document" />
+    <wsdl:operation name="buscaUnidadNombre">
+      <soap:operation soapAction="urn:buscaUnidadNombre" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -2922,6 +2913,15 @@
     </wsdl:operation>
     <wsdl:operation name="subirGuiasGtx">
       <soap:operation soapAction="urn:subirGuiasGtx" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="guardaCircuito">
+      <soap:operation soapAction="urn:guardaCircuito" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -3010,6 +3010,15 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="obtieneCatalogoIataInternacional">
+      <soap:operation soapAction="urn:obtieneCatalogoIataInternacional" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="buscaUnidad">
       <soap:operation soapAction="urn:buscaUnidad" style="document" />
       <wsdl:input>
@@ -3019,8 +3028,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="obtieneCatalogoIataInternacional">
-      <soap:operation soapAction="urn:obtieneCatalogoIataInternacional" style="document" />
+    <wsdl:operation name="cierraGtx">
+      <soap:operation soapAction="urn:cierraGtx" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -3046,15 +3055,6 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="cierraGtx">
-      <soap:operation soapAction="urn:cierraGtx" style="document" />
-      <wsdl:input>
-        <soap:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
     <wsdl:operation name="generaGuiaElectronica">
       <soap:operation soapAction="urn:generaGuiaElectronica" style="document" />
       <wsdl:input>
@@ -3064,8 +3064,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="buscaEtiquetaInter">
-      <soap:operation soapAction="urn:buscaEtiquetaInter" style="document" />
+    <wsdl:operation name="buscaConductor">
+      <soap:operation soapAction="urn:buscaConductor" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -3073,8 +3073,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="buscaConductor">
-      <soap:operation soapAction="urn:buscaConductor" style="document" />
+    <wsdl:operation name="buscaEtiquetaInter">
+      <soap:operation soapAction="urn:buscaEtiquetaInter" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -3190,8 +3190,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="obtieneCatalogoDestinosLTL">
-      <soap:operation soapAction="urn:obtieneCatalogoDestinosLTL" style="document" />
+    <wsdl:operation name="documentacionGuiaPalex">
+      <soap:operation soapAction="urn:documentacionGuiaPalex" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -3199,8 +3199,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="documentacionGuiaPalex">
-      <soap:operation soapAction="urn:documentacionGuiaPalex" style="document" />
+    <wsdl:operation name="obtieneCatalogoDestinosLTL">
+      <soap:operation soapAction="urn:obtieneCatalogoDestinosLTL" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -3298,8 +3298,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="solicitudRecoleccion">
-      <soap:operation soapAction="urn:solicitudRecoleccion" style="document" />
+    <wsdl:operation name="matrizDistribucion">
+      <soap:operation soapAction="urn:matrizDistribucion" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -3307,8 +3307,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="matrizDistribucion">
-      <soap:operation soapAction="urn:matrizDistribucion" style="document" />
+    <wsdl:operation name="solicitudRecoleccion">
+      <soap:operation soapAction="urn:solicitudRecoleccion" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -3379,8 +3379,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="buscaRutaDistribucion">
-      <soap:operation soapAction="urn:buscaRutaDistribucion" style="document" />
+    <wsdl:operation name="EnviaCorreoNotificacion">
+      <soap:operation soapAction="urn:EnviaCorreoNotificacion" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -3388,8 +3388,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="EnviaCorreoNotificacion">
-      <soap:operation soapAction="urn:EnviaCorreoNotificacion" style="document" />
+    <wsdl:operation name="buscaRutaDistribucion">
+      <soap:operation soapAction="urn:buscaRutaDistribucion" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -3496,8 +3496,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="pesoCircuito">
-      <soap:operation soapAction="urn:pesoCircuito" style="document" />
+    <wsdl:operation name="envioSinDatos">
+      <soap:operation soapAction="urn:envioSinDatos" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -3505,8 +3505,8 @@
         <soap:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="envioSinDatos">
-      <soap:operation soapAction="urn:envioSinDatos" style="document" />
+    <wsdl:operation name="pesoCircuito">
+      <soap:operation soapAction="urn:pesoCircuito" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>
@@ -3616,8 +3616,8 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="obtieneCatalogoClavesDEX">
-      <soap12:operation soapAction="urn:obtieneCatalogoClavesDEX" style="document" />
+    <wsdl:operation name="cargaDistribucion">
+      <soap12:operation soapAction="urn:cargaDistribucion" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -3625,8 +3625,8 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="cargaDistribucion">
-      <soap12:operation soapAction="urn:cargaDistribucion" style="document" />
+    <wsdl:operation name="obtieneCatalogoClavesDEX">
+      <soap12:operation soapAction="urn:obtieneCatalogoClavesDEX" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -3778,15 +3778,6 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="buscaUnidadNombre">
-      <soap12:operation soapAction="urn:buscaUnidadNombre" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
     <wsdl:operation name="centrosDistribucion">
       <soap12:operation soapAction="urn:centrosDistribucion" style="document" />
       <wsdl:input>
@@ -3796,8 +3787,8 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="guardaCircuito">
-      <soap12:operation soapAction="urn:guardaCircuito" style="document" />
+    <wsdl:operation name="buscaUnidadNombre">
+      <soap12:operation soapAction="urn:buscaUnidadNombre" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -3807,6 +3798,15 @@
     </wsdl:operation>
     <wsdl:operation name="subirGuiasGtx">
       <soap12:operation soapAction="urn:subirGuiasGtx" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="guardaCircuito">
+      <soap12:operation soapAction="urn:guardaCircuito" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -3895,6 +3895,15 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="obtieneCatalogoIataInternacional">
+      <soap12:operation soapAction="urn:obtieneCatalogoIataInternacional" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="buscaUnidad">
       <soap12:operation soapAction="urn:buscaUnidad" style="document" />
       <wsdl:input>
@@ -3904,8 +3913,8 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="obtieneCatalogoIataInternacional">
-      <soap12:operation soapAction="urn:obtieneCatalogoIataInternacional" style="document" />
+    <wsdl:operation name="cierraGtx">
+      <soap12:operation soapAction="urn:cierraGtx" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -3931,15 +3940,6 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="cierraGtx">
-      <soap12:operation soapAction="urn:cierraGtx" style="document" />
-      <wsdl:input>
-        <soap12:body use="literal" />
-      </wsdl:input>
-      <wsdl:output>
-        <soap12:body use="literal" />
-      </wsdl:output>
-    </wsdl:operation>
     <wsdl:operation name="generaGuiaElectronica">
       <soap12:operation soapAction="urn:generaGuiaElectronica" style="document" />
       <wsdl:input>
@@ -3949,8 +3949,8 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="buscaEtiquetaInter">
-      <soap12:operation soapAction="urn:buscaEtiquetaInter" style="document" />
+    <wsdl:operation name="buscaConductor">
+      <soap12:operation soapAction="urn:buscaConductor" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -3958,8 +3958,8 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="buscaConductor">
-      <soap12:operation soapAction="urn:buscaConductor" style="document" />
+    <wsdl:operation name="buscaEtiquetaInter">
+      <soap12:operation soapAction="urn:buscaEtiquetaInter" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -4075,8 +4075,8 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="obtieneCatalogoDestinosLTL">
-      <soap12:operation soapAction="urn:obtieneCatalogoDestinosLTL" style="document" />
+    <wsdl:operation name="documentacionGuiaPalex">
+      <soap12:operation soapAction="urn:documentacionGuiaPalex" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -4084,8 +4084,8 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="documentacionGuiaPalex">
-      <soap12:operation soapAction="urn:documentacionGuiaPalex" style="document" />
+    <wsdl:operation name="obtieneCatalogoDestinosLTL">
+      <soap12:operation soapAction="urn:obtieneCatalogoDestinosLTL" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -4183,8 +4183,8 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="solicitudRecoleccion">
-      <soap12:operation soapAction="urn:solicitudRecoleccion" style="document" />
+    <wsdl:operation name="matrizDistribucion">
+      <soap12:operation soapAction="urn:matrizDistribucion" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -4192,8 +4192,8 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="matrizDistribucion">
-      <soap12:operation soapAction="urn:matrizDistribucion" style="document" />
+    <wsdl:operation name="solicitudRecoleccion">
+      <soap12:operation soapAction="urn:solicitudRecoleccion" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -4264,8 +4264,8 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="buscaRutaDistribucion">
-      <soap12:operation soapAction="urn:buscaRutaDistribucion" style="document" />
+    <wsdl:operation name="EnviaCorreoNotificacion">
+      <soap12:operation soapAction="urn:EnviaCorreoNotificacion" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -4273,8 +4273,8 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="EnviaCorreoNotificacion">
-      <soap12:operation soapAction="urn:EnviaCorreoNotificacion" style="document" />
+    <wsdl:operation name="buscaRutaDistribucion">
+      <soap12:operation soapAction="urn:buscaRutaDistribucion" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -4381,8 +4381,8 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="pesoCircuito">
-      <soap12:operation soapAction="urn:pesoCircuito" style="document" />
+    <wsdl:operation name="envioSinDatos">
+      <soap12:operation soapAction="urn:envioSinDatos" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -4390,8 +4390,8 @@
         <soap12:body use="literal" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="envioSinDatos">
-      <soap12:operation soapAction="urn:envioSinDatos" style="document" />
+    <wsdl:operation name="pesoCircuito">
+      <soap12:operation soapAction="urn:pesoCircuito" style="document" />
       <wsdl:input>
         <soap12:body use="literal" />
       </wsdl:input>
@@ -4501,8 +4501,8 @@
         <mime:content part="parameters" type="application/xml" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="obtieneCatalogoClavesDEX">
-      <http:operation location="obtieneCatalogoClavesDEX" />
+    <wsdl:operation name="cargaDistribucion">
+      <http:operation location="cargaDistribucion" />
       <wsdl:input>
         <mime:content part="parameters" type="application/xml" />
       </wsdl:input>
@@ -4510,8 +4510,8 @@
         <mime:content part="parameters" type="application/xml" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="cargaDistribucion">
-      <http:operation location="cargaDistribucion" />
+    <wsdl:operation name="obtieneCatalogoClavesDEX">
+      <http:operation location="obtieneCatalogoClavesDEX" />
       <wsdl:input>
         <mime:content part="parameters" type="application/xml" />
       </wsdl:input>
@@ -4663,15 +4663,6 @@
         <mime:content part="parameters" type="application/xml" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="buscaUnidadNombre">
-      <http:operation location="buscaUnidadNombre" />
-      <wsdl:input>
-        <mime:content part="parameters" type="application/xml" />
-      </wsdl:input>
-      <wsdl:output>
-        <mime:content part="parameters" type="application/xml" />
-      </wsdl:output>
-    </wsdl:operation>
     <wsdl:operation name="centrosDistribucion">
       <http:operation location="centrosDistribucion" />
       <wsdl:input>
@@ -4681,8 +4672,8 @@
         <mime:content part="parameters" type="application/xml" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="guardaCircuito">
-      <http:operation location="guardaCircuito" />
+    <wsdl:operation name="buscaUnidadNombre">
+      <http:operation location="buscaUnidadNombre" />
       <wsdl:input>
         <mime:content part="parameters" type="application/xml" />
       </wsdl:input>
@@ -4692,6 +4683,15 @@
     </wsdl:operation>
     <wsdl:operation name="subirGuiasGtx">
       <http:operation location="subirGuiasGtx" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="guardaCircuito">
+      <http:operation location="guardaCircuito" />
       <wsdl:input>
         <mime:content part="parameters" type="application/xml" />
       </wsdl:input>
@@ -4780,6 +4780,15 @@
         <mime:content part="parameters" type="application/xml" />
       </wsdl:output>
     </wsdl:operation>
+    <wsdl:operation name="obtieneCatalogoIataInternacional">
+      <http:operation location="obtieneCatalogoIataInternacional" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
     <wsdl:operation name="buscaUnidad">
       <http:operation location="buscaUnidad" />
       <wsdl:input>
@@ -4789,8 +4798,8 @@
         <mime:content part="parameters" type="application/xml" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="obtieneCatalogoIataInternacional">
-      <http:operation location="obtieneCatalogoIataInternacional" />
+    <wsdl:operation name="cierraGtx">
+      <http:operation location="cierraGtx" />
       <wsdl:input>
         <mime:content part="parameters" type="application/xml" />
       </wsdl:input>
@@ -4816,15 +4825,6 @@
         <mime:content part="parameters" type="application/xml" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="cierraGtx">
-      <http:operation location="cierraGtx" />
-      <wsdl:input>
-        <mime:content part="parameters" type="application/xml" />
-      </wsdl:input>
-      <wsdl:output>
-        <mime:content part="parameters" type="application/xml" />
-      </wsdl:output>
-    </wsdl:operation>
     <wsdl:operation name="generaGuiaElectronica">
       <http:operation location="generaGuiaElectronica" />
       <wsdl:input>
@@ -4834,8 +4834,8 @@
         <mime:content part="parameters" type="application/xml" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="buscaEtiquetaInter">
-      <http:operation location="buscaEtiquetaInter" />
+    <wsdl:operation name="buscaConductor">
+      <http:operation location="buscaConductor" />
       <wsdl:input>
         <mime:content part="parameters" type="application/xml" />
       </wsdl:input>
@@ -4843,8 +4843,8 @@
         <mime:content part="parameters" type="application/xml" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="buscaConductor">
-      <http:operation location="buscaConductor" />
+    <wsdl:operation name="buscaEtiquetaInter">
+      <http:operation location="buscaEtiquetaInter" />
       <wsdl:input>
         <mime:content part="parameters" type="application/xml" />
       </wsdl:input>
@@ -4960,8 +4960,8 @@
         <mime:content part="parameters" type="application/xml" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="obtieneCatalogoDestinosLTL">
-      <http:operation location="obtieneCatalogoDestinosLTL" />
+    <wsdl:operation name="documentacionGuiaPalex">
+      <http:operation location="documentacionGuiaPalex" />
       <wsdl:input>
         <mime:content part="parameters" type="application/xml" />
       </wsdl:input>
@@ -4969,8 +4969,8 @@
         <mime:content part="parameters" type="application/xml" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="documentacionGuiaPalex">
-      <http:operation location="documentacionGuiaPalex" />
+    <wsdl:operation name="obtieneCatalogoDestinosLTL">
+      <http:operation location="obtieneCatalogoDestinosLTL" />
       <wsdl:input>
         <mime:content part="parameters" type="application/xml" />
       </wsdl:input>
@@ -5068,8 +5068,8 @@
         <mime:content part="parameters" type="application/xml" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="solicitudRecoleccion">
-      <http:operation location="solicitudRecoleccion" />
+    <wsdl:operation name="matrizDistribucion">
+      <http:operation location="matrizDistribucion" />
       <wsdl:input>
         <mime:content part="parameters" type="application/xml" />
       </wsdl:input>
@@ -5077,8 +5077,8 @@
         <mime:content part="parameters" type="application/xml" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="matrizDistribucion">
-      <http:operation location="matrizDistribucion" />
+    <wsdl:operation name="solicitudRecoleccion">
+      <http:operation location="solicitudRecoleccion" />
       <wsdl:input>
         <mime:content part="parameters" type="application/xml" />
       </wsdl:input>
@@ -5149,8 +5149,8 @@
         <mime:content part="parameters" type="application/xml" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="buscaRutaDistribucion">
-      <http:operation location="buscaRutaDistribucion" />
+    <wsdl:operation name="EnviaCorreoNotificacion">
+      <http:operation location="EnviaCorreoNotificacion" />
       <wsdl:input>
         <mime:content part="parameters" type="application/xml" />
       </wsdl:input>
@@ -5158,8 +5158,8 @@
         <mime:content part="parameters" type="application/xml" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="EnviaCorreoNotificacion">
-      <http:operation location="EnviaCorreoNotificacion" />
+    <wsdl:operation name="buscaRutaDistribucion">
+      <http:operation location="buscaRutaDistribucion" />
       <wsdl:input>
         <mime:content part="parameters" type="application/xml" />
       </wsdl:input>
@@ -5266,8 +5266,8 @@
         <mime:content part="parameters" type="application/xml" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="pesoCircuito">
-      <http:operation location="pesoCircuito" />
+    <wsdl:operation name="envioSinDatos">
+      <http:operation location="envioSinDatos" />
       <wsdl:input>
         <mime:content part="parameters" type="application/xml" />
       </wsdl:input>
@@ -5275,8 +5275,8 @@
         <mime:content part="parameters" type="application/xml" />
       </wsdl:output>
     </wsdl:operation>
-    <wsdl:operation name="envioSinDatos">
-      <http:operation location="envioSinDatos" />
+    <wsdl:operation name="pesoCircuito">
+      <http:operation location="pesoCircuito" />
       <wsdl:input>
         <mime:content part="parameters" type="application/xml" />
       </wsdl:input>

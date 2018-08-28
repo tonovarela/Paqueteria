@@ -25,7 +25,6 @@ namespace RedPackWS
         public string telefono { get; set; }
         public Nullable<System.DateTime> fecha_entrega { get; set; }
     
-        public virtual PaqueteEnvio PaqueteEnvio { get; set; }
         public virtual Cliente Cliente { get; set; }
     }
 }

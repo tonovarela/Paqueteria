@@ -21,6 +21,7 @@
           <Property Name="id_paqueteria" Type="tinyint" />
           <Property Name="id_tipoServicio" Type="tinyint" />
           <Property Name="numero_guia" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="asignada" Type="bit" Nullable="false" />
         </EntityType>
         <EntityType Name="Orden">
           <Key>
@@ -44,6 +45,7 @@
           <Property Name="detalle_impresion" Type="varbinary(max)" Nullable="false" />
           <Property Name="numero_orden" Type="varchar" MaxLength="50" Nullable="false" />
           <Property Name="numero_guia" Type="varchar" MaxLength="50" />
+          <Property Name="folio_recoleccion" Type="varchar" MaxLength="20" />
         </EntityType>
         <EntityType Name="Paqueteria">
           <Key>
@@ -88,18 +90,6 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_PaqueteEnvio_Orden">
-          <End Role="Orden" Type="Self.Orden" Multiplicity="1" />
-          <End Role="PaqueteEnvio" Type="Self.PaqueteEnvio" Multiplicity="0..1" />
-          <ReferentialConstraint>
-            <Principal Role="Orden">
-              <PropertyRef Name="numero_orden" />
-            </Principal>
-            <Dependent Role="PaqueteEnvio">
-              <PropertyRef Name="numero_orden" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <EntityContainer Name="CrecePlus2ModelStoreContainer">
           <EntitySet Name="Cliente" EntityType="Self.Cliente" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="GuiaPaqueteria" EntityType="Self.GuiaPaqueteria" Schema="dbo" store:Type="Tables" />
@@ -118,20 +108,21 @@
             <End Role="GuiaPaqueteria" EntitySet="GuiaPaqueteria" />
             <End Role="PaqueteEnvio" EntitySet="PaqueteEnvio" />
           </AssociationSet>
-          <AssociationSet Name="FK_PaqueteEnvio_Orden" Association="Self.FK_PaqueteEnvio_Orden">
-            <End Role="Orden" EntitySet="Orden" />
-            <End Role="PaqueteEnvio" EntitySet="PaqueteEnvio" />
-          </AssociationSet>
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="CrecePlus2Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityContainer Name="CrecePlus2Entities" annotation:LazyLoadingEnabled="true" >
+          <EntitySet Name="Cliente" EntityType="CrecePlus2Model.Cliente" />
           <EntitySet Name="GuiaPaqueteria" EntityType="CrecePlus2Model.GuiaPaqueteria" />
           <EntitySet Name="Orden" EntityType="CrecePlus2Model.Orden" />
           <EntitySet Name="PaqueteEnvio" EntityType="CrecePlus2Model.PaqueteEnvio" />
           <EntitySet Name="Paqueteria" EntityType="CrecePlus2Model.Paqueteria" />
+          <AssociationSet Name="FK_Orden_Cliente1" Association="CrecePlus2Model.FK_Orden_Cliente1">
+            <End Role="Cliente" EntitySet="Cliente" />
+            <End Role="Orden" EntitySet="Orden" />
+          </AssociationSet>
           <AssociationSet Name="FK_GuiaPaqueteria_Paqueteria" Association="CrecePlus2Model.FK_GuiaPaqueteria_Paqueteria">
             <End Role="Paqueteria" EntitySet="Paqueteria" />
             <End Role="GuiaPaqueteria" EntitySet="GuiaPaqueteria" />
@@ -140,16 +131,17 @@
             <End Role="GuiaPaqueteria" EntitySet="GuiaPaqueteria" />
             <End Role="PaqueteEnvio" EntitySet="PaqueteEnvio" />
           </AssociationSet>
-          <AssociationSet Name="FK_PaqueteEnvio_Orden" Association="CrecePlus2Model.FK_PaqueteEnvio_Orden">
-            <End Role="Orden" EntitySet="Orden" />
-            <End Role="PaqueteEnvio" EntitySet="PaqueteEnvio" />
-          </AssociationSet>
-          <EntitySet Name="Cliente" EntityType="CrecePlus2Model.Cliente" />
-          <AssociationSet Name="FK_Orden_Cliente1" Association="CrecePlus2Model.FK_Orden_Cliente1">
-            <End Role="Cliente" EntitySet="Cliente" />
-            <End Role="Orden" EntitySet="Orden" />
-          </AssociationSet>
         </EntityContainer>
+        <EntityType Name="Cliente">
+          <Key>
+            <PropertyRef Name="id_cliente" />
+          </Key>
+          <Property Name="id_cliente" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="apellidos" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Orden" Relationship="CrecePlus2Model.FK_Orden_Cliente1" FromRole="Cliente" ToRole="Orden" />
+        </EntityType>
         <EntityType Name="GuiaPaqueteria">
           <Key>
             <PropertyRef Name="numero_guia" />
@@ -159,6 +151,7 @@
           <Property Name="numero_guia" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="Paqueteria" Relationship="CrecePlus2Model.FK_GuiaPaqueteria_Paqueteria" FromRole="GuiaPaqueteria" ToRole="Paqueteria" />
           <NavigationProperty Name="PaqueteEnvio" Relationship="CrecePlus2Model.FK_PaqueteEnvio_GuiaPaqueteria" FromRole="GuiaPaqueteria" ToRole="PaqueteEnvio" />
+          <Property Name="asignada" Type="Boolean" Nullable="false" />
         </EntityType>
         <EntityType Name="Orden">
           <Key>
@@ -174,7 +167,6 @@
           <Property Name="fecha_registro" Type="DateTime" Precision="3" />
           <Property Name="telefono" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="fecha_entrega" Type="DateTime" Precision="3" />
-          <NavigationProperty Name="PaqueteEnvio" Relationship="CrecePlus2Model.FK_PaqueteEnvio_Orden" FromRole="Orden" ToRole="PaqueteEnvio" />
           <NavigationProperty Name="Cliente" Relationship="CrecePlus2Model.FK_Orden_Cliente1" FromRole="Orden" ToRole="Cliente" />
         </EntityType>
         <EntityType Name="PaqueteEnvio">
@@ -184,8 +176,8 @@
           <Property Name="detalle_impresion" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
           <Property Name="numero_orden" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
           <Property Name="numero_guia" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="folio_recoleccion" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="GuiaPaqueteria" Relationship="CrecePlus2Model.FK_PaqueteEnvio_GuiaPaqueteria" FromRole="PaqueteEnvio" ToRole="GuiaPaqueteria" />
-          <NavigationProperty Name="Orden" Relationship="CrecePlus2Model.FK_PaqueteEnvio_Orden" FromRole="PaqueteEnvio" ToRole="Orden" />
         </EntityType>
         <EntityType Name="Paqueteria">
           <Key>
@@ -195,6 +187,18 @@
           <Property Name="nombre" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="GuiaPaqueteria" Relationship="CrecePlus2Model.FK_GuiaPaqueteria_Paqueteria" FromRole="Paqueteria" ToRole="GuiaPaqueteria" />
         </EntityType>
+        <Association Name="FK_Orden_Cliente1">
+          <End Type="CrecePlus2Model.Cliente" Role="Cliente" Multiplicity="1" />
+          <End Type="CrecePlus2Model.Orden" Role="Orden" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Cliente">
+              <PropertyRef Name="id_cliente" />
+            </Principal>
+            <Dependent Role="Orden">
+              <PropertyRef Name="id_cliente" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_GuiaPaqueteria_Paqueteria">
           <End Type="CrecePlus2Model.Paqueteria" Role="Paqueteria" Multiplicity="0..1" />
           <End Type="CrecePlus2Model.GuiaPaqueteria" Role="GuiaPaqueteria" Multiplicity="*" />
@@ -219,49 +223,26 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_PaqueteEnvio_Orden">
-          <End Type="CrecePlus2Model.Orden" Role="Orden" Multiplicity="1" />
-          <End Type="CrecePlus2Model.PaqueteEnvio" Role="PaqueteEnvio" Multiplicity="0..1" />
-          <ReferentialConstraint>
-            <Principal Role="Orden">
-              <PropertyRef Name="numero_orden" />
-            </Principal>
-            <Dependent Role="PaqueteEnvio">
-              <PropertyRef Name="numero_orden" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <EntityType Name="Cliente">
-          <Key>
-            <PropertyRef Name="id_cliente" />
-          </Key>
-          <Property Name="id_cliente" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="apellidos" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="Orden" Relationship="CrecePlus2Model.FK_Orden_Cliente1" FromRole="Cliente" ToRole="Orden" />
-        </EntityType>
-        <Association Name="FK_Orden_Cliente1">
-          <End Type="CrecePlus2Model.Cliente" Role="Cliente" Multiplicity="1" />
-          <End Type="CrecePlus2Model.Orden" Role="Orden" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Cliente">
-              <PropertyRef Name="id_cliente" />
-            </Principal>
-            <Dependent Role="Orden">
-              <PropertyRef Name="id_cliente" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="CrecePlus2ModelStoreContainer" CdmEntityContainer="CrecePlus2Entities" >
+          <EntitySetMapping Name="Cliente">
+            <EntityTypeMapping TypeName="CrecePlus2Model.Cliente">
+              <MappingFragment StoreEntitySet="Cliente">
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="apellidos" ColumnName="apellidos" />
+                <ScalarProperty Name="nombre" ColumnName="nombre" />
+                <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="GuiaPaqueteria">
             <EntityTypeMapping TypeName="CrecePlus2Model.GuiaPaqueteria">
               <MappingFragment StoreEntitySet="GuiaPaqueteria">
+                <ScalarProperty Name="asignada" ColumnName="asignada" />
                 <ScalarProperty Name="numero_guia" ColumnName="numero_guia" />
                 <ScalarProperty Name="id_tipoServicio" ColumnName="id_tipoServicio" />
                 <ScalarProperty Name="id_paqueteria" ColumnName="id_paqueteria" />
@@ -287,6 +268,7 @@
           <EntitySetMapping Name="PaqueteEnvio">
             <EntityTypeMapping TypeName="CrecePlus2Model.PaqueteEnvio">
               <MappingFragment StoreEntitySet="PaqueteEnvio">
+                <ScalarProperty Name="folio_recoleccion" ColumnName="folio_recoleccion" />
                 <ScalarProperty Name="numero_guia" ColumnName="numero_guia" />
                 <ScalarProperty Name="numero_orden" ColumnName="numero_orden" />
                 <ScalarProperty Name="detalle_impresion" ColumnName="detalle_impresion" />
@@ -298,16 +280,6 @@
               <MappingFragment StoreEntitySet="Paqueteria">
                 <ScalarProperty Name="nombre" ColumnName="nombre" />
                 <ScalarProperty Name="id_paqueteria" ColumnName="id_paqueteria" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Cliente">
-            <EntityTypeMapping TypeName="CrecePlus2Model.Cliente">
-              <MappingFragment StoreEntitySet="Cliente">
-                <ScalarProperty Name="email" ColumnName="email" />
-                <ScalarProperty Name="apellidos" ColumnName="apellidos" />
-                <ScalarProperty Name="nombre" ColumnName="nombre" />
-                <ScalarProperty Name="id_cliente" ColumnName="id_cliente" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

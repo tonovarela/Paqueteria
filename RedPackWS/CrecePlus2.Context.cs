@@ -25,10 +25,10 @@ namespace RedPackWS
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<Cliente> Cliente { get; set; }
         public virtual DbSet<GuiaPaqueteria> GuiaPaqueteria { get; set; }
         public virtual DbSet<Orden> Orden { get; set; }
         public virtual DbSet<PaqueteEnvio> PaqueteEnvio { get; set; }
         public virtual DbSet<Paqueteria> Paqueteria { get; set; }
-        public virtual DbSet<Cliente> Cliente { get; set; }
     }
 }

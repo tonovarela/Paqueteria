@@ -16,6 +16,7 @@
     <Property Name="id_paqueteria" Type="tinyint" />
     <Property Name="id_tipoServicio" Type="tinyint" />
     <Property Name="numero_guia" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="asignada" Type="bit" Nullable="false" />
   </EntityType>
   <EntityType Name="Orden">
     <Key>
@@ -39,6 +40,7 @@
     <Property Name="detalle_impresion" Type="varbinary(max)" Nullable="false" />
     <Property Name="numero_orden" Type="varchar" MaxLength="50" Nullable="false" />
     <Property Name="numero_guia" Type="varchar" MaxLength="50" />
+    <Property Name="folio_recoleccion" Type="varchar" MaxLength="20" />
   </EntityType>
   <EntityType Name="Paqueteria">
     <Key>
@@ -83,18 +85,6 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_PaqueteEnvio_Orden">
-    <End Role="Orden" Type="Self.Orden" Multiplicity="1" />
-    <End Role="PaqueteEnvio" Type="Self.PaqueteEnvio" Multiplicity="0..1" />
-    <ReferentialConstraint>
-      <Principal Role="Orden">
-        <PropertyRef Name="numero_orden" />
-      </Principal>
-      <Dependent Role="PaqueteEnvio">
-        <PropertyRef Name="numero_orden" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
   <EntityContainer Name="CrecePlus2ModelStoreContainer">
     <EntitySet Name="Cliente" EntityType="Self.Cliente" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="GuiaPaqueteria" EntityType="Self.GuiaPaqueteria" Schema="dbo" store:Type="Tables" />
@@ -111,10 +101,6 @@
     </AssociationSet>
     <AssociationSet Name="FK_PaqueteEnvio_GuiaPaqueteria" Association="Self.FK_PaqueteEnvio_GuiaPaqueteria">
       <End Role="GuiaPaqueteria" EntitySet="GuiaPaqueteria" />
-      <End Role="PaqueteEnvio" EntitySet="PaqueteEnvio" />
-    </AssociationSet>
-    <AssociationSet Name="FK_PaqueteEnvio_Orden" Association="Self.FK_PaqueteEnvio_Orden">
-      <End Role="Orden" EntitySet="Orden" />
       <End Role="PaqueteEnvio" EntitySet="PaqueteEnvio" />
     </AssociationSet>
   </EntityContainer>

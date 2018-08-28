@@ -8,7 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-using System;
+using System.IO;
+using System.Xml.Serialization;
 
 namespace RedPackWS.WSRedpack {
     
@@ -99,15 +100,6 @@ namespace RedPackWS.WSRedpack {
         System.Threading.Tasks.Task<RedPackWS.WSRedpack.rastreoInternacionalResponse> rastreoInternacionalAsync(RedPackWS.WSRedpack.rastreoInternacionalRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="urn:cargaDistribucion", ReplyAction="urn:cargaDistribucionResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        RedPackWS.WSRedpack.cargaDistribucionResponse cargaDistribucion(RedPackWS.WSRedpack.cargaDistribucionRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="urn:cargaDistribucion", ReplyAction="urn:cargaDistribucionResponse")]
-        System.Threading.Tasks.Task<RedPackWS.WSRedpack.cargaDistribucionResponse> cargaDistribucionAsync(RedPackWS.WSRedpack.cargaDistribucionRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="urn:obtieneCatalogoClavesDEX", ReplyAction="urn:obtieneCatalogoClavesDEXResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
@@ -115,6 +107,15 @@ namespace RedPackWS.WSRedpack {
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:obtieneCatalogoClavesDEX", ReplyAction="urn:obtieneCatalogoClavesDEXResponse")]
         System.Threading.Tasks.Task<RedPackWS.WSRedpack.obtieneCatalogoClavesDEXResponse> obtieneCatalogoClavesDEXAsync(RedPackWS.WSRedpack.obtieneCatalogoClavesDEXRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="urn:cargaDistribucion", ReplyAction="urn:cargaDistribucionResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        RedPackWS.WSRedpack.cargaDistribucionResponse cargaDistribucion(RedPackWS.WSRedpack.cargaDistribucionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:cargaDistribucion", ReplyAction="urn:cargaDistribucionResponse")]
+        System.Threading.Tasks.Task<RedPackWS.WSRedpack.cargaDistribucionResponse> cargaDistribucionAsync(RedPackWS.WSRedpack.cargaDistribucionRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="urn:conductorCircuito", ReplyAction="urn:conductorCircuitoResponse")]
@@ -261,15 +262,6 @@ namespace RedPackWS.WSRedpack {
         System.Threading.Tasks.Task<RedPackWS.WSRedpack.solicitaGtxResponse> solicitaGtxAsync(RedPackWS.WSRedpack.solicitaGtxRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="urn:centrosDistribucion", ReplyAction="urn:centrosDistribucionResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        RedPackWS.WSRedpack.centrosDistribucionResponse centrosDistribucion(RedPackWS.WSRedpack.centrosDistribucionRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="urn:centrosDistribucion", ReplyAction="urn:centrosDistribucionResponse")]
-        System.Threading.Tasks.Task<RedPackWS.WSRedpack.centrosDistribucionResponse> centrosDistribucionAsync(RedPackWS.WSRedpack.centrosDistribucionRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="urn:buscaUnidadNombre", ReplyAction="urn:buscaUnidadNombreResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
@@ -279,13 +271,13 @@ namespace RedPackWS.WSRedpack {
         System.Threading.Tasks.Task<RedPackWS.WSRedpack.buscaUnidadNombreResponse> buscaUnidadNombreAsync(RedPackWS.WSRedpack.buscaUnidadNombreRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="urn:guardaCircuito", ReplyAction="urn:guardaCircuitoResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="urn:centrosDistribucion", ReplyAction="urn:centrosDistribucionResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        RedPackWS.WSRedpack.guardaCircuitoResponse guardaCircuito(RedPackWS.WSRedpack.guardaCircuitoRequest request);
+        RedPackWS.WSRedpack.centrosDistribucionResponse centrosDistribucion(RedPackWS.WSRedpack.centrosDistribucionRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="urn:guardaCircuito", ReplyAction="urn:guardaCircuitoResponse")]
-        System.Threading.Tasks.Task<RedPackWS.WSRedpack.guardaCircuitoResponse> guardaCircuitoAsync(RedPackWS.WSRedpack.guardaCircuitoRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="urn:centrosDistribucion", ReplyAction="urn:centrosDistribucionResponse")]
+        System.Threading.Tasks.Task<RedPackWS.WSRedpack.centrosDistribucionResponse> centrosDistribucionAsync(RedPackWS.WSRedpack.centrosDistribucionRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="urn:subirGuiasGtx", ReplyAction="urn:subirGuiasGtxResponse")]
@@ -295,6 +287,15 @@ namespace RedPackWS.WSRedpack {
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:subirGuiasGtx", ReplyAction="urn:subirGuiasGtxResponse")]
         System.Threading.Tasks.Task<RedPackWS.WSRedpack.subirGuiasGtxResponse> subirGuiasGtxAsync(RedPackWS.WSRedpack.subirGuiasGtxRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="urn:guardaCircuito", ReplyAction="urn:guardaCircuitoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        RedPackWS.WSRedpack.guardaCircuitoResponse guardaCircuito(RedPackWS.WSRedpack.guardaCircuitoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:guardaCircuito", ReplyAction="urn:guardaCircuitoResponse")]
+        System.Threading.Tasks.Task<RedPackWS.WSRedpack.guardaCircuitoResponse> guardaCircuitoAsync(RedPackWS.WSRedpack.guardaCircuitoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="urn:solicitaCompulsa", ReplyAction="urn:solicitaCompulsaResponse")]
@@ -378,6 +379,15 @@ namespace RedPackWS.WSRedpack {
         System.Threading.Tasks.Task<RedPackWS.WSRedpack.catalogoDireccionesGuiaWebResponse> catalogoDireccionesGuiaWebAsync(RedPackWS.WSRedpack.catalogoDireccionesGuiaWebRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="urn:obtieneCatalogoIataInternacional", ReplyAction="urn:obtieneCatalogoIataInternacionalResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        RedPackWS.WSRedpack.obtieneCatalogoIataInternacionalResponse obtieneCatalogoIataInternacional(RedPackWS.WSRedpack.obtieneCatalogoIataInternacionalRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:obtieneCatalogoIataInternacional", ReplyAction="urn:obtieneCatalogoIataInternacionalResponse")]
+        System.Threading.Tasks.Task<RedPackWS.WSRedpack.obtieneCatalogoIataInternacionalResponse> obtieneCatalogoIataInternacionalAsync(RedPackWS.WSRedpack.obtieneCatalogoIataInternacionalRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="urn:buscaUnidad", ReplyAction="urn:buscaUnidadResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
@@ -387,13 +397,13 @@ namespace RedPackWS.WSRedpack {
         System.Threading.Tasks.Task<RedPackWS.WSRedpack.buscaUnidadResponse> buscaUnidadAsync(RedPackWS.WSRedpack.buscaUnidadRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="urn:obtieneCatalogoIataInternacional", ReplyAction="urn:obtieneCatalogoIataInternacionalResponse")]
+        [System.ServiceModel.OperationContractAttribute(Action="urn:cierraGtx", ReplyAction="urn:cierraGtxResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        RedPackWS.WSRedpack.obtieneCatalogoIataInternacionalResponse obtieneCatalogoIataInternacional(RedPackWS.WSRedpack.obtieneCatalogoIataInternacionalRequest request);
+        RedPackWS.WSRedpack.cierraGtxResponse cierraGtx(RedPackWS.WSRedpack.cierraGtxRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(Action="urn:obtieneCatalogoIataInternacional", ReplyAction="urn:obtieneCatalogoIataInternacionalResponse")]
-        System.Threading.Tasks.Task<RedPackWS.WSRedpack.obtieneCatalogoIataInternacionalResponse> obtieneCatalogoIataInternacionalAsync(RedPackWS.WSRedpack.obtieneCatalogoIataInternacionalRequest request);
+        [System.ServiceModel.OperationContractAttribute(Action="urn:cierraGtx", ReplyAction="urn:cierraGtxResponse")]
+        System.Threading.Tasks.Task<RedPackWS.WSRedpack.cierraGtxResponse> cierraGtxAsync(RedPackWS.WSRedpack.cierraGtxRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="urn:pruebaEntrega", ReplyAction="urn:pruebaEntregaResponse")]
@@ -414,15 +424,6 @@ namespace RedPackWS.WSRedpack {
         System.Threading.Tasks.Task<RedPackWS.WSRedpack.buscaSucursalCPResponse> buscaSucursalCPAsync(RedPackWS.WSRedpack.buscaSucursalCPRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="urn:cierraGtx", ReplyAction="urn:cierraGtxResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        RedPackWS.WSRedpack.cierraGtxResponse cierraGtx(RedPackWS.WSRedpack.cierraGtxRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="urn:cierraGtx", ReplyAction="urn:cierraGtxResponse")]
-        System.Threading.Tasks.Task<RedPackWS.WSRedpack.cierraGtxResponse> cierraGtxAsync(RedPackWS.WSRedpack.cierraGtxRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="urn:generaGuiaElectronica", ReplyAction="urn:generaGuiaElectronicaResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
@@ -432,15 +433,6 @@ namespace RedPackWS.WSRedpack {
         System.Threading.Tasks.Task<RedPackWS.WSRedpack.generaGuiaElectronicaResponse> generaGuiaElectronicaAsync(RedPackWS.WSRedpack.generaGuiaElectronicaRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="urn:buscaConductor", ReplyAction="urn:buscaConductorResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        RedPackWS.WSRedpack.buscaConductorResponse buscaConductor(RedPackWS.WSRedpack.buscaConductorRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="urn:buscaConductor", ReplyAction="urn:buscaConductorResponse")]
-        System.Threading.Tasks.Task<RedPackWS.WSRedpack.buscaConductorResponse> buscaConductorAsync(RedPackWS.WSRedpack.buscaConductorRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="urn:buscaEtiquetaInter", ReplyAction="urn:buscaEtiquetaInterResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
@@ -448,6 +440,15 @@ namespace RedPackWS.WSRedpack {
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:buscaEtiquetaInter", ReplyAction="urn:buscaEtiquetaInterResponse")]
         System.Threading.Tasks.Task<RedPackWS.WSRedpack.buscaEtiquetaInterResponse> buscaEtiquetaInterAsync(RedPackWS.WSRedpack.buscaEtiquetaInterRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="urn:buscaConductor", ReplyAction="urn:buscaConductorResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        RedPackWS.WSRedpack.buscaConductorResponse buscaConductor(RedPackWS.WSRedpack.buscaConductorRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:buscaConductor", ReplyAction="urn:buscaConductorResponse")]
+        System.Threading.Tasks.Task<RedPackWS.WSRedpack.buscaConductorResponse> buscaConductorAsync(RedPackWS.WSRedpack.buscaConductorRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="urn:consultaReciboNomina", ReplyAction="urn:consultaReciboNominaResponse")]
@@ -558,15 +559,6 @@ namespace RedPackWS.WSRedpack {
         System.Threading.Tasks.Task<RedPackWS.WSRedpack.obtieneCatalogoSucursalesResponse> obtieneCatalogoSucursalesAsync(RedPackWS.WSRedpack.obtieneCatalogoSucursalesRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="urn:obtieneCatalogoDestinosLTL", ReplyAction="urn:obtieneCatalogoDestinosLTLResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        RedPackWS.WSRedpack.obtieneCatalogoDestinosLTLResponse obtieneCatalogoDestinosLTL(RedPackWS.WSRedpack.obtieneCatalogoDestinosLTLRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="urn:obtieneCatalogoDestinosLTL", ReplyAction="urn:obtieneCatalogoDestinosLTLResponse")]
-        System.Threading.Tasks.Task<RedPackWS.WSRedpack.obtieneCatalogoDestinosLTLResponse> obtieneCatalogoDestinosLTLAsync(RedPackWS.WSRedpack.obtieneCatalogoDestinosLTLRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="urn:documentacionGuiaPalex", ReplyAction="urn:documentacionGuiaPalexResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
@@ -574,6 +566,15 @@ namespace RedPackWS.WSRedpack {
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:documentacionGuiaPalex", ReplyAction="urn:documentacionGuiaPalexResponse")]
         System.Threading.Tasks.Task<RedPackWS.WSRedpack.documentacionGuiaPalexResponse> documentacionGuiaPalexAsync(RedPackWS.WSRedpack.documentacionGuiaPalexRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="urn:obtieneCatalogoDestinosLTL", ReplyAction="urn:obtieneCatalogoDestinosLTLResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        RedPackWS.WSRedpack.obtieneCatalogoDestinosLTLResponse obtieneCatalogoDestinosLTL(RedPackWS.WSRedpack.obtieneCatalogoDestinosLTLRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:obtieneCatalogoDestinosLTL", ReplyAction="urn:obtieneCatalogoDestinosLTLResponse")]
+        System.Threading.Tasks.Task<RedPackWS.WSRedpack.obtieneCatalogoDestinosLTLResponse> obtieneCatalogoDestinosLTLAsync(RedPackWS.WSRedpack.obtieneCatalogoDestinosLTLRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="urn:actualizacionSituaciones", ReplyAction="urn:actualizacionSituacionesResponse")]
@@ -666,15 +667,6 @@ namespace RedPackWS.WSRedpack {
         System.Threading.Tasks.Task<RedPackWS.WSRedpack.obtieneCatalogoTipoGtxResponse> obtieneCatalogoTipoGtxAsync(RedPackWS.WSRedpack.obtieneCatalogoTipoGtxRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="urn:solicitudRecoleccion", ReplyAction="urn:solicitudRecoleccionResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        RedPackWS.WSRedpack.solicitudRecoleccionResponse solicitudRecoleccion(RedPackWS.WSRedpack.solicitudRecoleccionRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="urn:solicitudRecoleccion", ReplyAction="urn:solicitudRecoleccionResponse")]
-        System.Threading.Tasks.Task<RedPackWS.WSRedpack.solicitudRecoleccionResponse> solicitudRecoleccionAsync(RedPackWS.WSRedpack.solicitudRecoleccionRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="urn:matrizDistribucion", ReplyAction="urn:matrizDistribucionResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
@@ -682,6 +674,15 @@ namespace RedPackWS.WSRedpack {
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:matrizDistribucion", ReplyAction="urn:matrizDistribucionResponse")]
         System.Threading.Tasks.Task<RedPackWS.WSRedpack.matrizDistribucionResponse> matrizDistribucionAsync(RedPackWS.WSRedpack.matrizDistribucionRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="urn:solicitudRecoleccion", ReplyAction="urn:solicitudRecoleccionResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        RedPackWS.WSRedpack.solicitudRecoleccionResponse solicitudRecoleccion(RedPackWS.WSRedpack.solicitudRecoleccionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:solicitudRecoleccion", ReplyAction="urn:solicitudRecoleccionResponse")]
+        System.Threading.Tasks.Task<RedPackWS.WSRedpack.solicitudRecoleccionResponse> solicitudRecoleccionAsync(RedPackWS.WSRedpack.solicitudRecoleccionRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="urn:calculaCostoSeguro", ReplyAction="urn:calculaCostoSeguroResponse")]
@@ -747,15 +748,6 @@ namespace RedPackWS.WSRedpack {
         System.Threading.Tasks.Task<RedPackWS.WSRedpack.direccionesRecoleccionResponse> direccionesRecoleccionAsync(RedPackWS.WSRedpack.direccionesRecoleccionRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="urn:buscaRutaDistribucion", ReplyAction="urn:buscaRutaDistribucionResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        RedPackWS.WSRedpack.buscaRutaDistribucionResponse buscaRutaDistribucion(RedPackWS.WSRedpack.buscaRutaDistribucionRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="urn:buscaRutaDistribucion", ReplyAction="urn:buscaRutaDistribucionResponse")]
-        System.Threading.Tasks.Task<RedPackWS.WSRedpack.buscaRutaDistribucionResponse> buscaRutaDistribucionAsync(RedPackWS.WSRedpack.buscaRutaDistribucionRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="urn:EnviaCorreoNotificacion", ReplyAction="urn:EnviaCorreoNotificacionResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
@@ -763,6 +755,15 @@ namespace RedPackWS.WSRedpack {
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:EnviaCorreoNotificacion", ReplyAction="urn:EnviaCorreoNotificacionResponse")]
         System.Threading.Tasks.Task<RedPackWS.WSRedpack.EnviaCorreoNotificacionResponse> EnviaCorreoNotificacionAsync(RedPackWS.WSRedpack.EnviaCorreoNotificacionRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="urn:buscaRutaDistribucion", ReplyAction="urn:buscaRutaDistribucionResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        RedPackWS.WSRedpack.buscaRutaDistribucionResponse buscaRutaDistribucion(RedPackWS.WSRedpack.buscaRutaDistribucionRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:buscaRutaDistribucion", ReplyAction="urn:buscaRutaDistribucionResponse")]
+        System.Threading.Tasks.Task<RedPackWS.WSRedpack.buscaRutaDistribucionResponse> buscaRutaDistribucionAsync(RedPackWS.WSRedpack.buscaRutaDistribucionRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="urn:buscaFactura", ReplyAction="urn:buscaFacturaResponse")]
@@ -864,15 +865,6 @@ namespace RedPackWS.WSRedpack {
         System.Threading.Tasks.Task<RedPackWS.WSRedpack.cotizacionLTLResponse> cotizacionLTLAsync(RedPackWS.WSRedpack.cotizacionLTLRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
-        [System.ServiceModel.OperationContractAttribute(Action="urn:pesoCircuito", ReplyAction="urn:pesoCircuitoResponse")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
-        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
-        RedPackWS.WSRedpack.pesoCircuitoResponse pesoCircuito(RedPackWS.WSRedpack.pesoCircuitoRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="urn:pesoCircuito", ReplyAction="urn:pesoCircuitoResponse")]
-        System.Threading.Tasks.Task<RedPackWS.WSRedpack.pesoCircuitoResponse> pesoCircuitoAsync(RedPackWS.WSRedpack.pesoCircuitoRequest request);
-        
-        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="urn:envioSinDatos", ReplyAction="urn:envioSinDatosResponse")]
         [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
         [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
@@ -880,6 +872,15 @@ namespace RedPackWS.WSRedpack {
         
         [System.ServiceModel.OperationContractAttribute(Action="urn:envioSinDatos", ReplyAction="urn:envioSinDatosResponse")]
         System.Threading.Tasks.Task<RedPackWS.WSRedpack.envioSinDatosResponse> envioSinDatosAsync(RedPackWS.WSRedpack.envioSinDatosRequest request);
+        
+        // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
+        [System.ServiceModel.OperationContractAttribute(Action="urn:pesoCircuito", ReplyAction="urn:pesoCircuitoResponse")]
+        [System.ServiceModel.XmlSerializerFormatAttribute(SupportFaults=true)]
+        [return: System.ServiceModel.MessageParameterAttribute(Name="return")]
+        RedPackWS.WSRedpack.pesoCircuitoResponse pesoCircuito(RedPackWS.WSRedpack.pesoCircuitoRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="urn:pesoCircuito", ReplyAction="urn:pesoCircuitoResponse")]
+        System.Threading.Tasks.Task<RedPackWS.WSRedpack.pesoCircuitoResponse> pesoCircuitoAsync(RedPackWS.WSRedpack.pesoCircuitoRequest request);
         
         // CODEGEN: El parámetro 'return' requiere información adicional de esquema que no se puede capturar con el modo de parámetros. El atributo específico es 'System.Xml.Serialization.XmlElementAttribute'.
         [System.ServiceModel.OperationContractAttribute(Action="urn:documentacion", ReplyAction="urn:documentacionResponse")]
@@ -2348,8 +2349,6 @@ namespace RedPackWS.WSRedpack {
                 propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
             }
         }
-
-      
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -2745,6 +2744,46 @@ namespace RedPackWS.WSRedpack {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtieneCatalogoClavesDEX", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
+    public partial class obtieneCatalogoClavesDEXRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string PIN;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=1)]
+        public int idUsuario;
+        
+        public obtieneCatalogoClavesDEXRequest() {
+        }
+        
+        public obtieneCatalogoClavesDEXRequest(string PIN, int idUsuario) {
+            this.PIN = PIN;
+            this.idUsuario = idUsuario;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtieneCatalogoClavesDEXResponse", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
+    public partial class obtieneCatalogoClavesDEXResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", IsNullable=true)]
+        public RedPackWS.WSRedpack.Guia[] @return;
+        
+        public obtieneCatalogoClavesDEXResponse() {
+        }
+        
+        public obtieneCatalogoClavesDEXResponse(RedPackWS.WSRedpack.Guia[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="cargaDistribucion", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
     public partial class cargaDistribucionRequest {
         
@@ -2783,46 +2822,6 @@ namespace RedPackWS.WSRedpack {
         }
         
         public cargaDistribucionResponse(RedPackWS.WSRedpack.Guia[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtieneCatalogoClavesDEX", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
-    public partial class obtieneCatalogoClavesDEXRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string PIN;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=1)]
-        public int idUsuario;
-        
-        public obtieneCatalogoClavesDEXRequest() {
-        }
-        
-        public obtieneCatalogoClavesDEXRequest(string PIN, int idUsuario) {
-            this.PIN = PIN;
-            this.idUsuario = idUsuario;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtieneCatalogoClavesDEXResponse", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
-    public partial class obtieneCatalogoClavesDEXResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", IsNullable=true)]
-        public RedPackWS.WSRedpack.Guia[] @return;
-        
-        public obtieneCatalogoClavesDEXResponse() {
-        }
-        
-        public obtieneCatalogoClavesDEXResponse(RedPackWS.WSRedpack.Guia[] @return) {
             this.@return = @return;
         }
     }
@@ -3545,46 +3544,6 @@ namespace RedPackWS.WSRedpack {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="centrosDistribucion", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
-    public partial class centrosDistribucionRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string PIN;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=1)]
-        public int idUsuario;
-        
-        public centrosDistribucionRequest() {
-        }
-        
-        public centrosDistribucionRequest(string PIN, int idUsuario) {
-            this.PIN = PIN;
-            this.idUsuario = idUsuario;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="centrosDistribucionResponse", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
-    public partial class centrosDistribucionResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", IsNullable=true)]
-        public RedPackWS.WSRedpack.Guia[] @return;
-        
-        public centrosDistribucionResponse() {
-        }
-        
-        public centrosDistribucionResponse(RedPackWS.WSRedpack.Guia[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="buscaUnidadNombre", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
     public partial class buscaUnidadNombreRequest {
         
@@ -3630,8 +3589,8 @@ namespace RedPackWS.WSRedpack {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="guardaCircuito", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
-    public partial class guardaCircuitoRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="centrosDistribucion", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
+    public partial class centrosDistribucionRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
@@ -3640,34 +3599,29 @@ namespace RedPackWS.WSRedpack {
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=1)]
         public int idUsuario;
         
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute("guias", IsNullable=true)]
-        public RedPackWS.WSRedpack.Guia[] guias;
-        
-        public guardaCircuitoRequest() {
+        public centrosDistribucionRequest() {
         }
         
-        public guardaCircuitoRequest(string PIN, int idUsuario, RedPackWS.WSRedpack.Guia[] guias) {
+        public centrosDistribucionRequest(string PIN, int idUsuario) {
             this.PIN = PIN;
             this.idUsuario = idUsuario;
-            this.guias = guias;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="guardaCircuitoResponse", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
-    public partial class guardaCircuitoResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="centrosDistribucionResponse", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
+    public partial class centrosDistribucionResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("return", IsNullable=true)]
         public RedPackWS.WSRedpack.Guia[] @return;
         
-        public guardaCircuitoResponse() {
+        public centrosDistribucionResponse() {
         }
         
-        public guardaCircuitoResponse(RedPackWS.WSRedpack.Guia[] @return) {
+        public centrosDistribucionResponse(RedPackWS.WSRedpack.Guia[] @return) {
             this.@return = @return;
         }
     }
@@ -3713,6 +3667,51 @@ namespace RedPackWS.WSRedpack {
         }
         
         public subirGuiasGtxResponse(RedPackWS.WSRedpack.Guia[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="guardaCircuito", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
+    public partial class guardaCircuitoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string PIN;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=1)]
+        public int idUsuario;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute("guias", IsNullable=true)]
+        public RedPackWS.WSRedpack.Guia[] guias;
+        
+        public guardaCircuitoRequest() {
+        }
+        
+        public guardaCircuitoRequest(string PIN, int idUsuario, RedPackWS.WSRedpack.Guia[] guias) {
+            this.PIN = PIN;
+            this.idUsuario = idUsuario;
+            this.guias = guias;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="guardaCircuitoResponse", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
+    public partial class guardaCircuitoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", IsNullable=true)]
+        public RedPackWS.WSRedpack.Guia[] @return;
+        
+        public guardaCircuitoResponse() {
+        }
+        
+        public guardaCircuitoResponse(RedPackWS.WSRedpack.Guia[] @return) {
             this.@return = @return;
         }
     }
@@ -4110,6 +4109,46 @@ namespace RedPackWS.WSRedpack {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtieneCatalogoIataInternacional", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
+    public partial class obtieneCatalogoIataInternacionalRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string PIN;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=1)]
+        public int idUsuario;
+        
+        public obtieneCatalogoIataInternacionalRequest() {
+        }
+        
+        public obtieneCatalogoIataInternacionalRequest(string PIN, int idUsuario) {
+            this.PIN = PIN;
+            this.idUsuario = idUsuario;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtieneCatalogoIataInternacionalResponse", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
+    public partial class obtieneCatalogoIataInternacionalResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", IsNullable=true)]
+        public RedPackWS.WSRedpack.Guia[] @return;
+        
+        public obtieneCatalogoIataInternacionalResponse() {
+        }
+        
+        public obtieneCatalogoIataInternacionalResponse(RedPackWS.WSRedpack.Guia[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="buscaUnidad", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
     public partial class buscaUnidadRequest {
         
@@ -4155,8 +4194,8 @@ namespace RedPackWS.WSRedpack {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtieneCatalogoIataInternacional", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
-    public partial class obtieneCatalogoIataInternacionalRequest {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="cierraGtx", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
+    public partial class cierraGtxRequest {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
@@ -4165,29 +4204,34 @@ namespace RedPackWS.WSRedpack {
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=1)]
         public int idUsuario;
         
-        public obtieneCatalogoIataInternacionalRequest() {
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute("guias", IsNullable=true)]
+        public RedPackWS.WSRedpack.Guia[] guias;
+        
+        public cierraGtxRequest() {
         }
         
-        public obtieneCatalogoIataInternacionalRequest(string PIN, int idUsuario) {
+        public cierraGtxRequest(string PIN, int idUsuario, RedPackWS.WSRedpack.Guia[] guias) {
             this.PIN = PIN;
             this.idUsuario = idUsuario;
+            this.guias = guias;
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtieneCatalogoIataInternacionalResponse", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
-    public partial class obtieneCatalogoIataInternacionalResponse {
+    [System.ServiceModel.MessageContractAttribute(WrapperName="cierraGtxResponse", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
+    public partial class cierraGtxResponse {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=0)]
         [System.Xml.Serialization.XmlElementAttribute("return", IsNullable=true)]
         public RedPackWS.WSRedpack.Guia[] @return;
         
-        public obtieneCatalogoIataInternacionalResponse() {
+        public cierraGtxResponse() {
         }
         
-        public obtieneCatalogoIataInternacionalResponse(RedPackWS.WSRedpack.Guia[] @return) {
+        public cierraGtxResponse(RedPackWS.WSRedpack.Guia[] @return) {
             this.@return = @return;
         }
     }
@@ -4285,51 +4329,6 @@ namespace RedPackWS.WSRedpack {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="cierraGtx", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
-    public partial class cierraGtxRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string PIN;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=1)]
-        public int idUsuario;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute("guias", IsNullable=true)]
-        public RedPackWS.WSRedpack.Guia[] guias;
-        
-        public cierraGtxRequest() {
-        }
-        
-        public cierraGtxRequest(string PIN, int idUsuario, RedPackWS.WSRedpack.Guia[] guias) {
-            this.PIN = PIN;
-            this.idUsuario = idUsuario;
-            this.guias = guias;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="cierraGtxResponse", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
-    public partial class cierraGtxResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", IsNullable=true)]
-        public RedPackWS.WSRedpack.Guia[] @return;
-        
-        public cierraGtxResponse() {
-        }
-        
-        public cierraGtxResponse(RedPackWS.WSRedpack.Guia[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="generaGuiaElectronica", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
     public partial class generaGuiaElectronicaRequest {
         
@@ -4375,51 +4374,6 @@ namespace RedPackWS.WSRedpack {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="buscaConductor", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
-    public partial class buscaConductorRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string PIN;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=1)]
-        public int idUsuario;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute("guias", IsNullable=true)]
-        public RedPackWS.WSRedpack.Guia[] guias;
-        
-        public buscaConductorRequest() {
-        }
-        
-        public buscaConductorRequest(string PIN, int idUsuario, RedPackWS.WSRedpack.Guia[] guias) {
-            this.PIN = PIN;
-            this.idUsuario = idUsuario;
-            this.guias = guias;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="buscaConductorResponse", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
-    public partial class buscaConductorResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", IsNullable=true)]
-        public RedPackWS.WSRedpack.Guia[] @return;
-        
-        public buscaConductorResponse() {
-        }
-        
-        public buscaConductorResponse(RedPackWS.WSRedpack.Guia[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="buscaEtiquetaInter", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
     public partial class buscaEtiquetaInterRequest {
         
@@ -4458,6 +4412,51 @@ namespace RedPackWS.WSRedpack {
         }
         
         public buscaEtiquetaInterResponse(RedPackWS.WSRedpack.Guia[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="buscaConductor", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
+    public partial class buscaConductorRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string PIN;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=1)]
+        public int idUsuario;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute("guias", IsNullable=true)]
+        public RedPackWS.WSRedpack.Guia[] guias;
+        
+        public buscaConductorRequest() {
+        }
+        
+        public buscaConductorRequest(string PIN, int idUsuario, RedPackWS.WSRedpack.Guia[] guias) {
+            this.PIN = PIN;
+            this.idUsuario = idUsuario;
+            this.guias = guias;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="buscaConductorResponse", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
+    public partial class buscaConductorResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", IsNullable=true)]
+        public RedPackWS.WSRedpack.Guia[] @return;
+        
+        public buscaConductorResponse() {
+        }
+        
+        public buscaConductorResponse(RedPackWS.WSRedpack.Guia[] @return) {
             this.@return = @return;
         }
     }
@@ -4985,46 +4984,6 @@ namespace RedPackWS.WSRedpack {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtieneCatalogoDestinosLTL", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
-    public partial class obtieneCatalogoDestinosLTLRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string PIN;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=1)]
-        public int idUsuario;
-        
-        public obtieneCatalogoDestinosLTLRequest() {
-        }
-        
-        public obtieneCatalogoDestinosLTLRequest(string PIN, int idUsuario) {
-            this.PIN = PIN;
-            this.idUsuario = idUsuario;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="obtieneCatalogoDestinosLTLResponse", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
-    public partial class obtieneCatalogoDestinosLTLResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", IsNullable=true)]
-        public RedPackWS.WSRedpack.Guia[] @return;
-        
-        public obtieneCatalogoDestinosLTLResponse() {
-        }
-        
-        public obtieneCatalogoDestinosLTLResponse(RedPackWS.WSRedpack.Guia[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="documentacionGuiaPalex", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
     public partial class documentacionGuiaPalexRequest {
         
@@ -5063,6 +5022,46 @@ namespace RedPackWS.WSRedpack {
         }
         
         public documentacionGuiaPalexResponse(RedPackWS.WSRedpack.Guia[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtieneCatalogoDestinosLTL", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
+    public partial class obtieneCatalogoDestinosLTLRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string PIN;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=1)]
+        public int idUsuario;
+        
+        public obtieneCatalogoDestinosLTLRequest() {
+        }
+        
+        public obtieneCatalogoDestinosLTLRequest(string PIN, int idUsuario) {
+            this.PIN = PIN;
+            this.idUsuario = idUsuario;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="obtieneCatalogoDestinosLTLResponse", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
+    public partial class obtieneCatalogoDestinosLTLResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", IsNullable=true)]
+        public RedPackWS.WSRedpack.Guia[] @return;
+        
+        public obtieneCatalogoDestinosLTLResponse() {
+        }
+        
+        public obtieneCatalogoDestinosLTLResponse(RedPackWS.WSRedpack.Guia[] @return) {
             this.@return = @return;
         }
     }
@@ -5510,51 +5509,6 @@ namespace RedPackWS.WSRedpack {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="solicitudRecoleccion", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
-    public partial class solicitudRecoleccionRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string PIN;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=1)]
-        public int idUsuario;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute("guias", IsNullable=true)]
-        public RedPackWS.WSRedpack.Guia[] guias;
-        
-        public solicitudRecoleccionRequest() {
-        }
-        
-        public solicitudRecoleccionRequest(string PIN, int idUsuario, RedPackWS.WSRedpack.Guia[] guias) {
-            this.PIN = PIN;
-            this.idUsuario = idUsuario;
-            this.guias = guias;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="solicitudRecoleccionResponse", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
-    public partial class solicitudRecoleccionResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", IsNullable=true)]
-        public RedPackWS.WSRedpack.Guia[] @return;
-        
-        public solicitudRecoleccionResponse() {
-        }
-        
-        public solicitudRecoleccionResponse(RedPackWS.WSRedpack.Guia[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="matrizDistribucion", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
     public partial class matrizDistribucionRequest {
         
@@ -5593,6 +5547,51 @@ namespace RedPackWS.WSRedpack {
         }
         
         public matrizDistribucionResponse(RedPackWS.WSRedpack.Guia[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="solicitudRecoleccion", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
+    public partial class solicitudRecoleccionRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string PIN;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=1)]
+        public int idUsuario;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute("guias", IsNullable=true)]
+        public RedPackWS.WSRedpack.Guia[] guias;
+        
+        public solicitudRecoleccionRequest() {
+        }
+        
+        public solicitudRecoleccionRequest(string PIN, int idUsuario, RedPackWS.WSRedpack.Guia[] guias) {
+            this.PIN = PIN;
+            this.idUsuario = idUsuario;
+            this.guias = guias;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="solicitudRecoleccionResponse", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
+    public partial class solicitudRecoleccionResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", IsNullable=true)]
+        public RedPackWS.WSRedpack.Guia[] @return;
+        
+        public solicitudRecoleccionResponse() {
+        }
+        
+        public solicitudRecoleccionResponse(RedPackWS.WSRedpack.Guia[] @return) {
             this.@return = @return;
         }
     }
@@ -5915,51 +5914,6 @@ namespace RedPackWS.WSRedpack {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="buscaRutaDistribucion", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
-    public partial class buscaRutaDistribucionRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string PIN;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=1)]
-        public int idUsuario;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute("guias", IsNullable=true)]
-        public RedPackWS.WSRedpack.Guia[] guias;
-        
-        public buscaRutaDistribucionRequest() {
-        }
-        
-        public buscaRutaDistribucionRequest(string PIN, int idUsuario, RedPackWS.WSRedpack.Guia[] guias) {
-            this.PIN = PIN;
-            this.idUsuario = idUsuario;
-            this.guias = guias;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="buscaRutaDistribucionResponse", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
-    public partial class buscaRutaDistribucionResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", IsNullable=true)]
-        public RedPackWS.WSRedpack.Guia[] @return;
-        
-        public buscaRutaDistribucionResponse() {
-        }
-        
-        public buscaRutaDistribucionResponse(RedPackWS.WSRedpack.Guia[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="EnviaCorreoNotificacion", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
     public partial class EnviaCorreoNotificacionRequest {
         
@@ -5998,6 +5952,51 @@ namespace RedPackWS.WSRedpack {
         }
         
         public EnviaCorreoNotificacionResponse(RedPackWS.WSRedpack.Guia[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="buscaRutaDistribucion", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
+    public partial class buscaRutaDistribucionRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string PIN;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=1)]
+        public int idUsuario;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute("guias", IsNullable=true)]
+        public RedPackWS.WSRedpack.Guia[] guias;
+        
+        public buscaRutaDistribucionRequest() {
+        }
+        
+        public buscaRutaDistribucionRequest(string PIN, int idUsuario, RedPackWS.WSRedpack.Guia[] guias) {
+            this.PIN = PIN;
+            this.idUsuario = idUsuario;
+            this.guias = guias;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="buscaRutaDistribucionResponse", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
+    public partial class buscaRutaDistribucionResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", IsNullable=true)]
+        public RedPackWS.WSRedpack.Guia[] @return;
+        
+        public buscaRutaDistribucionResponse() {
+        }
+        
+        public buscaRutaDistribucionResponse(RedPackWS.WSRedpack.Guia[] @return) {
             this.@return = @return;
         }
     }
@@ -6490,51 +6489,6 @@ namespace RedPackWS.WSRedpack {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="pesoCircuito", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
-    public partial class pesoCircuitoRequest {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public string PIN;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=1)]
-        public int idUsuario;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=2)]
-        [System.Xml.Serialization.XmlElementAttribute("guias", IsNullable=true)]
-        public RedPackWS.WSRedpack.Guia[] guias;
-        
-        public pesoCircuitoRequest() {
-        }
-        
-        public pesoCircuitoRequest(string PIN, int idUsuario, RedPackWS.WSRedpack.Guia[] guias) {
-            this.PIN = PIN;
-            this.idUsuario = idUsuario;
-            this.guias = guias;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="pesoCircuitoResponse", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
-    public partial class pesoCircuitoResponse {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=0)]
-        [System.Xml.Serialization.XmlElementAttribute("return", IsNullable=true)]
-        public RedPackWS.WSRedpack.Guia[] @return;
-        
-        public pesoCircuitoResponse() {
-        }
-        
-        public pesoCircuitoResponse(RedPackWS.WSRedpack.Guia[] @return) {
-            this.@return = @return;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
     [System.ServiceModel.MessageContractAttribute(WrapperName="envioSinDatos", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
     public partial class envioSinDatosRequest {
         
@@ -6573,6 +6527,51 @@ namespace RedPackWS.WSRedpack {
         }
         
         public envioSinDatosResponse(RedPackWS.WSRedpack.Guia[] @return) {
+            this.@return = @return;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="pesoCircuito", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
+    public partial class pesoCircuitoRequest {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string PIN;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=1)]
+        public int idUsuario;
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=2)]
+        [System.Xml.Serialization.XmlElementAttribute("guias", IsNullable=true)]
+        public RedPackWS.WSRedpack.Guia[] guias;
+        
+        public pesoCircuitoRequest() {
+        }
+        
+        public pesoCircuitoRequest(string PIN, int idUsuario, RedPackWS.WSRedpack.Guia[] guias) {
+            this.PIN = PIN;
+            this.idUsuario = idUsuario;
+            this.guias = guias;
+        }
+    }
+    
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+    [System.ServiceModel.MessageContractAttribute(WrapperName="pesoCircuitoResponse", WrapperNamespace="http://ws.redpack.com", IsWrapped=true)]
+    public partial class pesoCircuitoResponse {
+        
+        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="http://ws.redpack.com", Order=0)]
+        [System.Xml.Serialization.XmlElementAttribute("return", IsNullable=true)]
+        public RedPackWS.WSRedpack.Guia[] @return;
+        
+        public pesoCircuitoResponse() {
+        }
+        
+        public pesoCircuitoResponse(RedPackWS.WSRedpack.Guia[] @return) {
             this.@return = @return;
         }
     }
@@ -6932,6 +6931,31 @@ namespace RedPackWS.WSRedpack {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        RedPackWS.WSRedpack.obtieneCatalogoClavesDEXResponse RedPackWS.WSRedpack.RedpackWSPortType.obtieneCatalogoClavesDEX(RedPackWS.WSRedpack.obtieneCatalogoClavesDEXRequest request) {
+            return base.Channel.obtieneCatalogoClavesDEX(request);
+        }
+        
+        public RedPackWS.WSRedpack.Guia[] obtieneCatalogoClavesDEX(string PIN, int idUsuario) {
+            RedPackWS.WSRedpack.obtieneCatalogoClavesDEXRequest inValue = new RedPackWS.WSRedpack.obtieneCatalogoClavesDEXRequest();
+            inValue.PIN = PIN;
+            inValue.idUsuario = idUsuario;
+            RedPackWS.WSRedpack.obtieneCatalogoClavesDEXResponse retVal = ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).obtieneCatalogoClavesDEX(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<RedPackWS.WSRedpack.obtieneCatalogoClavesDEXResponse> RedPackWS.WSRedpack.RedpackWSPortType.obtieneCatalogoClavesDEXAsync(RedPackWS.WSRedpack.obtieneCatalogoClavesDEXRequest request) {
+            return base.Channel.obtieneCatalogoClavesDEXAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<RedPackWS.WSRedpack.obtieneCatalogoClavesDEXResponse> obtieneCatalogoClavesDEXAsync(string PIN, int idUsuario) {
+            RedPackWS.WSRedpack.obtieneCatalogoClavesDEXRequest inValue = new RedPackWS.WSRedpack.obtieneCatalogoClavesDEXRequest();
+            inValue.PIN = PIN;
+            inValue.idUsuario = idUsuario;
+            return ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).obtieneCatalogoClavesDEXAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         RedPackWS.WSRedpack.cargaDistribucionResponse RedPackWS.WSRedpack.RedpackWSPortType.cargaDistribucion(RedPackWS.WSRedpack.cargaDistribucionRequest request) {
             return base.Channel.cargaDistribucion(request);
         }
@@ -6956,31 +6980,6 @@ namespace RedPackWS.WSRedpack {
             inValue.idUsuario = idUsuario;
             inValue.guias = guias;
             return ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).cargaDistribucionAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        RedPackWS.WSRedpack.obtieneCatalogoClavesDEXResponse RedPackWS.WSRedpack.RedpackWSPortType.obtieneCatalogoClavesDEX(RedPackWS.WSRedpack.obtieneCatalogoClavesDEXRequest request) {
-            return base.Channel.obtieneCatalogoClavesDEX(request);
-        }
-        
-        public RedPackWS.WSRedpack.Guia[] obtieneCatalogoClavesDEX(string PIN, int idUsuario) {
-            RedPackWS.WSRedpack.obtieneCatalogoClavesDEXRequest inValue = new RedPackWS.WSRedpack.obtieneCatalogoClavesDEXRequest();
-            inValue.PIN = PIN;
-            inValue.idUsuario = idUsuario;
-            RedPackWS.WSRedpack.obtieneCatalogoClavesDEXResponse retVal = ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).obtieneCatalogoClavesDEX(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<RedPackWS.WSRedpack.obtieneCatalogoClavesDEXResponse> RedPackWS.WSRedpack.RedpackWSPortType.obtieneCatalogoClavesDEXAsync(RedPackWS.WSRedpack.obtieneCatalogoClavesDEXRequest request) {
-            return base.Channel.obtieneCatalogoClavesDEXAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<RedPackWS.WSRedpack.obtieneCatalogoClavesDEXResponse> obtieneCatalogoClavesDEXAsync(string PIN, int idUsuario) {
-            RedPackWS.WSRedpack.obtieneCatalogoClavesDEXRequest inValue = new RedPackWS.WSRedpack.obtieneCatalogoClavesDEXRequest();
-            inValue.PIN = PIN;
-            inValue.idUsuario = idUsuario;
-            return ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).obtieneCatalogoClavesDEXAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -7288,6 +7287,11 @@ namespace RedPackWS.WSRedpack {
             inValue.PIN = PIN;
             inValue.idUsuario = idUsuario;
             inValue.guias = guias;
+
+                        
+                    
+
+
             RedPackWS.WSRedpack.predocumentacionResponse retVal = ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).predocumentacion(inValue);
             return retVal.@return;
         }
@@ -7414,31 +7418,6 @@ namespace RedPackWS.WSRedpack {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        RedPackWS.WSRedpack.centrosDistribucionResponse RedPackWS.WSRedpack.RedpackWSPortType.centrosDistribucion(RedPackWS.WSRedpack.centrosDistribucionRequest request) {
-            return base.Channel.centrosDistribucion(request);
-        }
-        
-        public RedPackWS.WSRedpack.Guia[] centrosDistribucion(string PIN, int idUsuario) {
-            RedPackWS.WSRedpack.centrosDistribucionRequest inValue = new RedPackWS.WSRedpack.centrosDistribucionRequest();
-            inValue.PIN = PIN;
-            inValue.idUsuario = idUsuario;
-            RedPackWS.WSRedpack.centrosDistribucionResponse retVal = ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).centrosDistribucion(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<RedPackWS.WSRedpack.centrosDistribucionResponse> RedPackWS.WSRedpack.RedpackWSPortType.centrosDistribucionAsync(RedPackWS.WSRedpack.centrosDistribucionRequest request) {
-            return base.Channel.centrosDistribucionAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<RedPackWS.WSRedpack.centrosDistribucionResponse> centrosDistribucionAsync(string PIN, int idUsuario) {
-            RedPackWS.WSRedpack.centrosDistribucionRequest inValue = new RedPackWS.WSRedpack.centrosDistribucionRequest();
-            inValue.PIN = PIN;
-            inValue.idUsuario = idUsuario;
-            return ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).centrosDistribucionAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         RedPackWS.WSRedpack.buscaUnidadNombreResponse RedPackWS.WSRedpack.RedpackWSPortType.buscaUnidadNombre(RedPackWS.WSRedpack.buscaUnidadNombreRequest request) {
             return base.Channel.buscaUnidadNombre(request);
         }
@@ -7466,30 +7445,28 @@ namespace RedPackWS.WSRedpack {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        RedPackWS.WSRedpack.guardaCircuitoResponse RedPackWS.WSRedpack.RedpackWSPortType.guardaCircuito(RedPackWS.WSRedpack.guardaCircuitoRequest request) {
-            return base.Channel.guardaCircuito(request);
+        RedPackWS.WSRedpack.centrosDistribucionResponse RedPackWS.WSRedpack.RedpackWSPortType.centrosDistribucion(RedPackWS.WSRedpack.centrosDistribucionRequest request) {
+            return base.Channel.centrosDistribucion(request);
         }
         
-        public RedPackWS.WSRedpack.Guia[] guardaCircuito(string PIN, int idUsuario, RedPackWS.WSRedpack.Guia[] guias) {
-            RedPackWS.WSRedpack.guardaCircuitoRequest inValue = new RedPackWS.WSRedpack.guardaCircuitoRequest();
+        public RedPackWS.WSRedpack.Guia[] centrosDistribucion(string PIN, int idUsuario) {
+            RedPackWS.WSRedpack.centrosDistribucionRequest inValue = new RedPackWS.WSRedpack.centrosDistribucionRequest();
             inValue.PIN = PIN;
             inValue.idUsuario = idUsuario;
-            inValue.guias = guias;
-            RedPackWS.WSRedpack.guardaCircuitoResponse retVal = ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).guardaCircuito(inValue);
+            RedPackWS.WSRedpack.centrosDistribucionResponse retVal = ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).centrosDistribucion(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<RedPackWS.WSRedpack.guardaCircuitoResponse> RedPackWS.WSRedpack.RedpackWSPortType.guardaCircuitoAsync(RedPackWS.WSRedpack.guardaCircuitoRequest request) {
-            return base.Channel.guardaCircuitoAsync(request);
+        System.Threading.Tasks.Task<RedPackWS.WSRedpack.centrosDistribucionResponse> RedPackWS.WSRedpack.RedpackWSPortType.centrosDistribucionAsync(RedPackWS.WSRedpack.centrosDistribucionRequest request) {
+            return base.Channel.centrosDistribucionAsync(request);
         }
         
-        public System.Threading.Tasks.Task<RedPackWS.WSRedpack.guardaCircuitoResponse> guardaCircuitoAsync(string PIN, int idUsuario, RedPackWS.WSRedpack.Guia[] guias) {
-            RedPackWS.WSRedpack.guardaCircuitoRequest inValue = new RedPackWS.WSRedpack.guardaCircuitoRequest();
+        public System.Threading.Tasks.Task<RedPackWS.WSRedpack.centrosDistribucionResponse> centrosDistribucionAsync(string PIN, int idUsuario) {
+            RedPackWS.WSRedpack.centrosDistribucionRequest inValue = new RedPackWS.WSRedpack.centrosDistribucionRequest();
             inValue.PIN = PIN;
             inValue.idUsuario = idUsuario;
-            inValue.guias = guias;
-            return ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).guardaCircuitoAsync(inValue);
+            return ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).centrosDistribucionAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -7517,6 +7494,33 @@ namespace RedPackWS.WSRedpack {
             inValue.idUsuario = idUsuario;
             inValue.guias = guias;
             return ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).subirGuiasGtxAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        RedPackWS.WSRedpack.guardaCircuitoResponse RedPackWS.WSRedpack.RedpackWSPortType.guardaCircuito(RedPackWS.WSRedpack.guardaCircuitoRequest request) {
+            return base.Channel.guardaCircuito(request);
+        }
+        
+        public RedPackWS.WSRedpack.Guia[] guardaCircuito(string PIN, int idUsuario, RedPackWS.WSRedpack.Guia[] guias) {
+            RedPackWS.WSRedpack.guardaCircuitoRequest inValue = new RedPackWS.WSRedpack.guardaCircuitoRequest();
+            inValue.PIN = PIN;
+            inValue.idUsuario = idUsuario;
+            inValue.guias = guias;
+            RedPackWS.WSRedpack.guardaCircuitoResponse retVal = ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).guardaCircuito(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<RedPackWS.WSRedpack.guardaCircuitoResponse> RedPackWS.WSRedpack.RedpackWSPortType.guardaCircuitoAsync(RedPackWS.WSRedpack.guardaCircuitoRequest request) {
+            return base.Channel.guardaCircuitoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<RedPackWS.WSRedpack.guardaCircuitoResponse> guardaCircuitoAsync(string PIN, int idUsuario, RedPackWS.WSRedpack.Guia[] guias) {
+            RedPackWS.WSRedpack.guardaCircuitoRequest inValue = new RedPackWS.WSRedpack.guardaCircuitoRequest();
+            inValue.PIN = PIN;
+            inValue.idUsuario = idUsuario;
+            inValue.guias = guias;
+            return ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).guardaCircuitoAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -7757,6 +7761,31 @@ namespace RedPackWS.WSRedpack {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        RedPackWS.WSRedpack.obtieneCatalogoIataInternacionalResponse RedPackWS.WSRedpack.RedpackWSPortType.obtieneCatalogoIataInternacional(RedPackWS.WSRedpack.obtieneCatalogoIataInternacionalRequest request) {
+            return base.Channel.obtieneCatalogoIataInternacional(request);
+        }
+        
+        public RedPackWS.WSRedpack.Guia[] obtieneCatalogoIataInternacional(string PIN, int idUsuario) {
+            RedPackWS.WSRedpack.obtieneCatalogoIataInternacionalRequest inValue = new RedPackWS.WSRedpack.obtieneCatalogoIataInternacionalRequest();
+            inValue.PIN = PIN;
+            inValue.idUsuario = idUsuario;
+            RedPackWS.WSRedpack.obtieneCatalogoIataInternacionalResponse retVal = ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).obtieneCatalogoIataInternacional(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<RedPackWS.WSRedpack.obtieneCatalogoIataInternacionalResponse> RedPackWS.WSRedpack.RedpackWSPortType.obtieneCatalogoIataInternacionalAsync(RedPackWS.WSRedpack.obtieneCatalogoIataInternacionalRequest request) {
+            return base.Channel.obtieneCatalogoIataInternacionalAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<RedPackWS.WSRedpack.obtieneCatalogoIataInternacionalResponse> obtieneCatalogoIataInternacionalAsync(string PIN, int idUsuario) {
+            RedPackWS.WSRedpack.obtieneCatalogoIataInternacionalRequest inValue = new RedPackWS.WSRedpack.obtieneCatalogoIataInternacionalRequest();
+            inValue.PIN = PIN;
+            inValue.idUsuario = idUsuario;
+            return ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).obtieneCatalogoIataInternacionalAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         RedPackWS.WSRedpack.buscaUnidadResponse RedPackWS.WSRedpack.RedpackWSPortType.buscaUnidad(RedPackWS.WSRedpack.buscaUnidadRequest request) {
             return base.Channel.buscaUnidad(request);
         }
@@ -7784,28 +7813,30 @@ namespace RedPackWS.WSRedpack {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        RedPackWS.WSRedpack.obtieneCatalogoIataInternacionalResponse RedPackWS.WSRedpack.RedpackWSPortType.obtieneCatalogoIataInternacional(RedPackWS.WSRedpack.obtieneCatalogoIataInternacionalRequest request) {
-            return base.Channel.obtieneCatalogoIataInternacional(request);
+        RedPackWS.WSRedpack.cierraGtxResponse RedPackWS.WSRedpack.RedpackWSPortType.cierraGtx(RedPackWS.WSRedpack.cierraGtxRequest request) {
+            return base.Channel.cierraGtx(request);
         }
         
-        public RedPackWS.WSRedpack.Guia[] obtieneCatalogoIataInternacional(string PIN, int idUsuario) {
-            RedPackWS.WSRedpack.obtieneCatalogoIataInternacionalRequest inValue = new RedPackWS.WSRedpack.obtieneCatalogoIataInternacionalRequest();
+        public RedPackWS.WSRedpack.Guia[] cierraGtx(string PIN, int idUsuario, RedPackWS.WSRedpack.Guia[] guias) {
+            RedPackWS.WSRedpack.cierraGtxRequest inValue = new RedPackWS.WSRedpack.cierraGtxRequest();
             inValue.PIN = PIN;
             inValue.idUsuario = idUsuario;
-            RedPackWS.WSRedpack.obtieneCatalogoIataInternacionalResponse retVal = ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).obtieneCatalogoIataInternacional(inValue);
+            inValue.guias = guias;
+            RedPackWS.WSRedpack.cierraGtxResponse retVal = ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).cierraGtx(inValue);
             return retVal.@return;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<RedPackWS.WSRedpack.obtieneCatalogoIataInternacionalResponse> RedPackWS.WSRedpack.RedpackWSPortType.obtieneCatalogoIataInternacionalAsync(RedPackWS.WSRedpack.obtieneCatalogoIataInternacionalRequest request) {
-            return base.Channel.obtieneCatalogoIataInternacionalAsync(request);
+        System.Threading.Tasks.Task<RedPackWS.WSRedpack.cierraGtxResponse> RedPackWS.WSRedpack.RedpackWSPortType.cierraGtxAsync(RedPackWS.WSRedpack.cierraGtxRequest request) {
+            return base.Channel.cierraGtxAsync(request);
         }
         
-        public System.Threading.Tasks.Task<RedPackWS.WSRedpack.obtieneCatalogoIataInternacionalResponse> obtieneCatalogoIataInternacionalAsync(string PIN, int idUsuario) {
-            RedPackWS.WSRedpack.obtieneCatalogoIataInternacionalRequest inValue = new RedPackWS.WSRedpack.obtieneCatalogoIataInternacionalRequest();
+        public System.Threading.Tasks.Task<RedPackWS.WSRedpack.cierraGtxResponse> cierraGtxAsync(string PIN, int idUsuario, RedPackWS.WSRedpack.Guia[] guias) {
+            RedPackWS.WSRedpack.cierraGtxRequest inValue = new RedPackWS.WSRedpack.cierraGtxRequest();
             inValue.PIN = PIN;
             inValue.idUsuario = idUsuario;
-            return ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).obtieneCatalogoIataInternacionalAsync(inValue);
+            inValue.guias = guias;
+            return ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).cierraGtxAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -7863,33 +7894,6 @@ namespace RedPackWS.WSRedpack {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        RedPackWS.WSRedpack.cierraGtxResponse RedPackWS.WSRedpack.RedpackWSPortType.cierraGtx(RedPackWS.WSRedpack.cierraGtxRequest request) {
-            return base.Channel.cierraGtx(request);
-        }
-        
-        public RedPackWS.WSRedpack.Guia[] cierraGtx(string PIN, int idUsuario, RedPackWS.WSRedpack.Guia[] guias) {
-            RedPackWS.WSRedpack.cierraGtxRequest inValue = new RedPackWS.WSRedpack.cierraGtxRequest();
-            inValue.PIN = PIN;
-            inValue.idUsuario = idUsuario;
-            inValue.guias = guias;
-            RedPackWS.WSRedpack.cierraGtxResponse retVal = ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).cierraGtx(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<RedPackWS.WSRedpack.cierraGtxResponse> RedPackWS.WSRedpack.RedpackWSPortType.cierraGtxAsync(RedPackWS.WSRedpack.cierraGtxRequest request) {
-            return base.Channel.cierraGtxAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<RedPackWS.WSRedpack.cierraGtxResponse> cierraGtxAsync(string PIN, int idUsuario, RedPackWS.WSRedpack.Guia[] guias) {
-            RedPackWS.WSRedpack.cierraGtxRequest inValue = new RedPackWS.WSRedpack.cierraGtxRequest();
-            inValue.PIN = PIN;
-            inValue.idUsuario = idUsuario;
-            inValue.guias = guias;
-            return ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).cierraGtxAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         RedPackWS.WSRedpack.generaGuiaElectronicaResponse RedPackWS.WSRedpack.RedpackWSPortType.generaGuiaElectronica(RedPackWS.WSRedpack.generaGuiaElectronicaRequest request) {
             return base.Channel.generaGuiaElectronica(request);
         }
@@ -7917,33 +7921,6 @@ namespace RedPackWS.WSRedpack {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        RedPackWS.WSRedpack.buscaConductorResponse RedPackWS.WSRedpack.RedpackWSPortType.buscaConductor(RedPackWS.WSRedpack.buscaConductorRequest request) {
-            return base.Channel.buscaConductor(request);
-        }
-        
-        public RedPackWS.WSRedpack.Guia[] buscaConductor(string PIN, int idUsuario, RedPackWS.WSRedpack.Guia[] guias) {
-            RedPackWS.WSRedpack.buscaConductorRequest inValue = new RedPackWS.WSRedpack.buscaConductorRequest();
-            inValue.PIN = PIN;
-            inValue.idUsuario = idUsuario;
-            inValue.guias = guias;
-            RedPackWS.WSRedpack.buscaConductorResponse retVal = ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).buscaConductor(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<RedPackWS.WSRedpack.buscaConductorResponse> RedPackWS.WSRedpack.RedpackWSPortType.buscaConductorAsync(RedPackWS.WSRedpack.buscaConductorRequest request) {
-            return base.Channel.buscaConductorAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<RedPackWS.WSRedpack.buscaConductorResponse> buscaConductorAsync(string PIN, int idUsuario, RedPackWS.WSRedpack.Guia[] guias) {
-            RedPackWS.WSRedpack.buscaConductorRequest inValue = new RedPackWS.WSRedpack.buscaConductorRequest();
-            inValue.PIN = PIN;
-            inValue.idUsuario = idUsuario;
-            inValue.guias = guias;
-            return ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).buscaConductorAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         RedPackWS.WSRedpack.buscaEtiquetaInterResponse RedPackWS.WSRedpack.RedpackWSPortType.buscaEtiquetaInter(RedPackWS.WSRedpack.buscaEtiquetaInterRequest request) {
             return base.Channel.buscaEtiquetaInter(request);
         }
@@ -7968,6 +7945,33 @@ namespace RedPackWS.WSRedpack {
             inValue.idUsuario = idUsuario;
             inValue.guias = guias;
             return ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).buscaEtiquetaInterAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        RedPackWS.WSRedpack.buscaConductorResponse RedPackWS.WSRedpack.RedpackWSPortType.buscaConductor(RedPackWS.WSRedpack.buscaConductorRequest request) {
+            return base.Channel.buscaConductor(request);
+        }
+        
+        public RedPackWS.WSRedpack.Guia[] buscaConductor(string PIN, int idUsuario, RedPackWS.WSRedpack.Guia[] guias) {
+            RedPackWS.WSRedpack.buscaConductorRequest inValue = new RedPackWS.WSRedpack.buscaConductorRequest();
+            inValue.PIN = PIN;
+            inValue.idUsuario = idUsuario;
+            inValue.guias = guias;
+            RedPackWS.WSRedpack.buscaConductorResponse retVal = ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).buscaConductor(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<RedPackWS.WSRedpack.buscaConductorResponse> RedPackWS.WSRedpack.RedpackWSPortType.buscaConductorAsync(RedPackWS.WSRedpack.buscaConductorRequest request) {
+            return base.Channel.buscaConductorAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<RedPackWS.WSRedpack.buscaConductorResponse> buscaConductorAsync(string PIN, int idUsuario, RedPackWS.WSRedpack.Guia[] guias) {
+            RedPackWS.WSRedpack.buscaConductorRequest inValue = new RedPackWS.WSRedpack.buscaConductorRequest();
+            inValue.PIN = PIN;
+            inValue.idUsuario = idUsuario;
+            inValue.guias = guias;
+            return ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).buscaConductorAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -8287,31 +8291,6 @@ namespace RedPackWS.WSRedpack {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        RedPackWS.WSRedpack.obtieneCatalogoDestinosLTLResponse RedPackWS.WSRedpack.RedpackWSPortType.obtieneCatalogoDestinosLTL(RedPackWS.WSRedpack.obtieneCatalogoDestinosLTLRequest request) {
-            return base.Channel.obtieneCatalogoDestinosLTL(request);
-        }
-        
-        public RedPackWS.WSRedpack.Guia[] obtieneCatalogoDestinosLTL(string PIN, int idUsuario) {
-            RedPackWS.WSRedpack.obtieneCatalogoDestinosLTLRequest inValue = new RedPackWS.WSRedpack.obtieneCatalogoDestinosLTLRequest();
-            inValue.PIN = PIN;
-            inValue.idUsuario = idUsuario;
-            RedPackWS.WSRedpack.obtieneCatalogoDestinosLTLResponse retVal = ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).obtieneCatalogoDestinosLTL(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<RedPackWS.WSRedpack.obtieneCatalogoDestinosLTLResponse> RedPackWS.WSRedpack.RedpackWSPortType.obtieneCatalogoDestinosLTLAsync(RedPackWS.WSRedpack.obtieneCatalogoDestinosLTLRequest request) {
-            return base.Channel.obtieneCatalogoDestinosLTLAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<RedPackWS.WSRedpack.obtieneCatalogoDestinosLTLResponse> obtieneCatalogoDestinosLTLAsync(string PIN, int idUsuario) {
-            RedPackWS.WSRedpack.obtieneCatalogoDestinosLTLRequest inValue = new RedPackWS.WSRedpack.obtieneCatalogoDestinosLTLRequest();
-            inValue.PIN = PIN;
-            inValue.idUsuario = idUsuario;
-            return ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).obtieneCatalogoDestinosLTLAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         RedPackWS.WSRedpack.documentacionGuiaPalexResponse RedPackWS.WSRedpack.RedpackWSPortType.documentacionGuiaPalex(RedPackWS.WSRedpack.documentacionGuiaPalexRequest request) {
             return base.Channel.documentacionGuiaPalex(request);
         }
@@ -8336,6 +8315,31 @@ namespace RedPackWS.WSRedpack {
             inValue.idUsuario = idUsuario;
             inValue.guias = guias;
             return ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).documentacionGuiaPalexAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        RedPackWS.WSRedpack.obtieneCatalogoDestinosLTLResponse RedPackWS.WSRedpack.RedpackWSPortType.obtieneCatalogoDestinosLTL(RedPackWS.WSRedpack.obtieneCatalogoDestinosLTLRequest request) {
+            return base.Channel.obtieneCatalogoDestinosLTL(request);
+        }
+        
+        public RedPackWS.WSRedpack.Guia[] obtieneCatalogoDestinosLTL(string PIN, int idUsuario) {
+            RedPackWS.WSRedpack.obtieneCatalogoDestinosLTLRequest inValue = new RedPackWS.WSRedpack.obtieneCatalogoDestinosLTLRequest();
+            inValue.PIN = PIN;
+            inValue.idUsuario = idUsuario;
+            RedPackWS.WSRedpack.obtieneCatalogoDestinosLTLResponse retVal = ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).obtieneCatalogoDestinosLTL(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<RedPackWS.WSRedpack.obtieneCatalogoDestinosLTLResponse> RedPackWS.WSRedpack.RedpackWSPortType.obtieneCatalogoDestinosLTLAsync(RedPackWS.WSRedpack.obtieneCatalogoDestinosLTLRequest request) {
+            return base.Channel.obtieneCatalogoDestinosLTLAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<RedPackWS.WSRedpack.obtieneCatalogoDestinosLTLResponse> obtieneCatalogoDestinosLTLAsync(string PIN, int idUsuario) {
+            RedPackWS.WSRedpack.obtieneCatalogoDestinosLTLRequest inValue = new RedPackWS.WSRedpack.obtieneCatalogoDestinosLTLRequest();
+            inValue.PIN = PIN;
+            inValue.idUsuario = idUsuario;
+            return ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).obtieneCatalogoDestinosLTLAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -8605,33 +8609,6 @@ namespace RedPackWS.WSRedpack {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        RedPackWS.WSRedpack.solicitudRecoleccionResponse RedPackWS.WSRedpack.RedpackWSPortType.solicitudRecoleccion(RedPackWS.WSRedpack.solicitudRecoleccionRequest request) {
-            return base.Channel.solicitudRecoleccion(request);
-        }
-        
-        public RedPackWS.WSRedpack.Guia[] solicitudRecoleccion(string PIN, int idUsuario, RedPackWS.WSRedpack.Guia[] guias) {
-            RedPackWS.WSRedpack.solicitudRecoleccionRequest inValue = new RedPackWS.WSRedpack.solicitudRecoleccionRequest();
-            inValue.PIN = PIN;
-            inValue.idUsuario = idUsuario;
-            inValue.guias = guias;
-            RedPackWS.WSRedpack.solicitudRecoleccionResponse retVal = ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).solicitudRecoleccion(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<RedPackWS.WSRedpack.solicitudRecoleccionResponse> RedPackWS.WSRedpack.RedpackWSPortType.solicitudRecoleccionAsync(RedPackWS.WSRedpack.solicitudRecoleccionRequest request) {
-            return base.Channel.solicitudRecoleccionAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<RedPackWS.WSRedpack.solicitudRecoleccionResponse> solicitudRecoleccionAsync(string PIN, int idUsuario, RedPackWS.WSRedpack.Guia[] guias) {
-            RedPackWS.WSRedpack.solicitudRecoleccionRequest inValue = new RedPackWS.WSRedpack.solicitudRecoleccionRequest();
-            inValue.PIN = PIN;
-            inValue.idUsuario = idUsuario;
-            inValue.guias = guias;
-            return ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).solicitudRecoleccionAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         RedPackWS.WSRedpack.matrizDistribucionResponse RedPackWS.WSRedpack.RedpackWSPortType.matrizDistribucion(RedPackWS.WSRedpack.matrizDistribucionRequest request) {
             return base.Channel.matrizDistribucion(request);
         }
@@ -8656,6 +8633,33 @@ namespace RedPackWS.WSRedpack {
             inValue.idUsuario = idUsuario;
             inValue.guias = guias;
             return ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).matrizDistribucionAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        RedPackWS.WSRedpack.solicitudRecoleccionResponse RedPackWS.WSRedpack.RedpackWSPortType.solicitudRecoleccion(RedPackWS.WSRedpack.solicitudRecoleccionRequest request) {
+            return base.Channel.solicitudRecoleccion(request);
+        }
+        
+        public RedPackWS.WSRedpack.Guia[] solicitudRecoleccion(string PIN, int idUsuario, RedPackWS.WSRedpack.Guia[] guias) {
+            RedPackWS.WSRedpack.solicitudRecoleccionRequest inValue = new RedPackWS.WSRedpack.solicitudRecoleccionRequest();
+            inValue.PIN = PIN;
+            inValue.idUsuario = idUsuario;
+            inValue.guias = guias;
+            RedPackWS.WSRedpack.solicitudRecoleccionResponse retVal = ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).solicitudRecoleccion(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<RedPackWS.WSRedpack.solicitudRecoleccionResponse> RedPackWS.WSRedpack.RedpackWSPortType.solicitudRecoleccionAsync(RedPackWS.WSRedpack.solicitudRecoleccionRequest request) {
+            return base.Channel.solicitudRecoleccionAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<RedPackWS.WSRedpack.solicitudRecoleccionResponse> solicitudRecoleccionAsync(string PIN, int idUsuario, RedPackWS.WSRedpack.Guia[] guias) {
+            RedPackWS.WSRedpack.solicitudRecoleccionRequest inValue = new RedPackWS.WSRedpack.solicitudRecoleccionRequest();
+            inValue.PIN = PIN;
+            inValue.idUsuario = idUsuario;
+            inValue.guias = guias;
+            return ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).solicitudRecoleccionAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -8848,33 +8852,6 @@ namespace RedPackWS.WSRedpack {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        RedPackWS.WSRedpack.buscaRutaDistribucionResponse RedPackWS.WSRedpack.RedpackWSPortType.buscaRutaDistribucion(RedPackWS.WSRedpack.buscaRutaDistribucionRequest request) {
-            return base.Channel.buscaRutaDistribucion(request);
-        }
-        
-        public RedPackWS.WSRedpack.Guia[] buscaRutaDistribucion(string PIN, int idUsuario, RedPackWS.WSRedpack.Guia[] guias) {
-            RedPackWS.WSRedpack.buscaRutaDistribucionRequest inValue = new RedPackWS.WSRedpack.buscaRutaDistribucionRequest();
-            inValue.PIN = PIN;
-            inValue.idUsuario = idUsuario;
-            inValue.guias = guias;
-            RedPackWS.WSRedpack.buscaRutaDistribucionResponse retVal = ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).buscaRutaDistribucion(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<RedPackWS.WSRedpack.buscaRutaDistribucionResponse> RedPackWS.WSRedpack.RedpackWSPortType.buscaRutaDistribucionAsync(RedPackWS.WSRedpack.buscaRutaDistribucionRequest request) {
-            return base.Channel.buscaRutaDistribucionAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<RedPackWS.WSRedpack.buscaRutaDistribucionResponse> buscaRutaDistribucionAsync(string PIN, int idUsuario, RedPackWS.WSRedpack.Guia[] guias) {
-            RedPackWS.WSRedpack.buscaRutaDistribucionRequest inValue = new RedPackWS.WSRedpack.buscaRutaDistribucionRequest();
-            inValue.PIN = PIN;
-            inValue.idUsuario = idUsuario;
-            inValue.guias = guias;
-            return ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).buscaRutaDistribucionAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         RedPackWS.WSRedpack.EnviaCorreoNotificacionResponse RedPackWS.WSRedpack.RedpackWSPortType.EnviaCorreoNotificacion(RedPackWS.WSRedpack.EnviaCorreoNotificacionRequest request) {
             return base.Channel.EnviaCorreoNotificacion(request);
         }
@@ -8899,6 +8876,33 @@ namespace RedPackWS.WSRedpack {
             inValue.idUsuario = idUsuario;
             inValue.guias = guias;
             return ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).EnviaCorreoNotificacionAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        RedPackWS.WSRedpack.buscaRutaDistribucionResponse RedPackWS.WSRedpack.RedpackWSPortType.buscaRutaDistribucion(RedPackWS.WSRedpack.buscaRutaDistribucionRequest request) {
+            return base.Channel.buscaRutaDistribucion(request);
+        }
+        
+        public RedPackWS.WSRedpack.Guia[] buscaRutaDistribucion(string PIN, int idUsuario, RedPackWS.WSRedpack.Guia[] guias) {
+            RedPackWS.WSRedpack.buscaRutaDistribucionRequest inValue = new RedPackWS.WSRedpack.buscaRutaDistribucionRequest();
+            inValue.PIN = PIN;
+            inValue.idUsuario = idUsuario;
+            inValue.guias = guias;
+            RedPackWS.WSRedpack.buscaRutaDistribucionResponse retVal = ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).buscaRutaDistribucion(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<RedPackWS.WSRedpack.buscaRutaDistribucionResponse> RedPackWS.WSRedpack.RedpackWSPortType.buscaRutaDistribucionAsync(RedPackWS.WSRedpack.buscaRutaDistribucionRequest request) {
+            return base.Channel.buscaRutaDistribucionAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<RedPackWS.WSRedpack.buscaRutaDistribucionResponse> buscaRutaDistribucionAsync(string PIN, int idUsuario, RedPackWS.WSRedpack.Guia[] guias) {
+            RedPackWS.WSRedpack.buscaRutaDistribucionRequest inValue = new RedPackWS.WSRedpack.buscaRutaDistribucionRequest();
+            inValue.PIN = PIN;
+            inValue.idUsuario = idUsuario;
+            inValue.guias = guias;
+            return ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).buscaRutaDistribucionAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -9195,33 +9199,6 @@ namespace RedPackWS.WSRedpack {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        RedPackWS.WSRedpack.pesoCircuitoResponse RedPackWS.WSRedpack.RedpackWSPortType.pesoCircuito(RedPackWS.WSRedpack.pesoCircuitoRequest request) {
-            return base.Channel.pesoCircuito(request);
-        }
-        
-        public RedPackWS.WSRedpack.Guia[] pesoCircuito(string PIN, int idUsuario, RedPackWS.WSRedpack.Guia[] guias) {
-            RedPackWS.WSRedpack.pesoCircuitoRequest inValue = new RedPackWS.WSRedpack.pesoCircuitoRequest();
-            inValue.PIN = PIN;
-            inValue.idUsuario = idUsuario;
-            inValue.guias = guias;
-            RedPackWS.WSRedpack.pesoCircuitoResponse retVal = ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).pesoCircuito(inValue);
-            return retVal.@return;
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<RedPackWS.WSRedpack.pesoCircuitoResponse> RedPackWS.WSRedpack.RedpackWSPortType.pesoCircuitoAsync(RedPackWS.WSRedpack.pesoCircuitoRequest request) {
-            return base.Channel.pesoCircuitoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<RedPackWS.WSRedpack.pesoCircuitoResponse> pesoCircuitoAsync(string PIN, int idUsuario, RedPackWS.WSRedpack.Guia[] guias) {
-            RedPackWS.WSRedpack.pesoCircuitoRequest inValue = new RedPackWS.WSRedpack.pesoCircuitoRequest();
-            inValue.PIN = PIN;
-            inValue.idUsuario = idUsuario;
-            inValue.guias = guias;
-            return ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).pesoCircuitoAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         RedPackWS.WSRedpack.envioSinDatosResponse RedPackWS.WSRedpack.RedpackWSPortType.envioSinDatos(RedPackWS.WSRedpack.envioSinDatosRequest request) {
             return base.Channel.envioSinDatos(request);
         }
@@ -9246,6 +9223,33 @@ namespace RedPackWS.WSRedpack {
             inValue.idUsuario = idUsuario;
             inValue.guias = guias;
             return ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).envioSinDatosAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        RedPackWS.WSRedpack.pesoCircuitoResponse RedPackWS.WSRedpack.RedpackWSPortType.pesoCircuito(RedPackWS.WSRedpack.pesoCircuitoRequest request) {
+            return base.Channel.pesoCircuito(request);
+        }
+        
+        public RedPackWS.WSRedpack.Guia[] pesoCircuito(string PIN, int idUsuario, RedPackWS.WSRedpack.Guia[] guias) {
+            RedPackWS.WSRedpack.pesoCircuitoRequest inValue = new RedPackWS.WSRedpack.pesoCircuitoRequest();
+            inValue.PIN = PIN;
+            inValue.idUsuario = idUsuario;
+            inValue.guias = guias;
+            RedPackWS.WSRedpack.pesoCircuitoResponse retVal = ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).pesoCircuito(inValue);
+            return retVal.@return;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<RedPackWS.WSRedpack.pesoCircuitoResponse> RedPackWS.WSRedpack.RedpackWSPortType.pesoCircuitoAsync(RedPackWS.WSRedpack.pesoCircuitoRequest request) {
+            return base.Channel.pesoCircuitoAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<RedPackWS.WSRedpack.pesoCircuitoResponse> pesoCircuitoAsync(string PIN, int idUsuario, RedPackWS.WSRedpack.Guia[] guias) {
+            RedPackWS.WSRedpack.pesoCircuitoRequest inValue = new RedPackWS.WSRedpack.pesoCircuitoRequest();
+            inValue.PIN = PIN;
+            inValue.idUsuario = idUsuario;
+            inValue.guias = guias;
+            return ((RedPackWS.WSRedpack.RedpackWSPortType)(this)).pesoCircuitoAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]

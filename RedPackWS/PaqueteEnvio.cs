@@ -17,8 +17,8 @@ namespace RedPackWS
         public byte[] detalle_impresion { get; set; }
         public string numero_orden { get; set; }
         public string numero_guia { get; set; }
+        public string folio_recoleccion { get; set; }
     
         public virtual GuiaPaqueteria GuiaPaqueteria { get; set; }
-        public virtual Orden Orden { get; set; }
     }
 }
